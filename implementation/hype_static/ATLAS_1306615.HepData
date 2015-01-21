@@ -1,0 +1,681 @@
+*author: AAD
+*reference: ARXIV:1407.4222 : 2014
+*reference: CERN-PH-EP-2014-198 : 2014
+*reference: https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2013-10/ : 2014
+*status: Encoded 28 AUG 2014 by D. Gillberg / A. Pilkington (ATLAS)
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: 1306615
+*cdsId: 1746319
+*durhamId: 6240
+*title: Measurements of fiducial and differential cross sections for Higgs boson production in the diphoton decay channel at sqrt(s) = 8  TeV with ATLAS
+*comment: Measurements of cross sections and differential distributions for Higgs production in the diphoton channel are presented based on 20.3 fb-1 proton-proton collisions at sqrt(s) = 8 TeV
+
+*dataset:
+*location: Fig. 4a
+*dscomment: Measured differential cross section with associated uncertainties as a function of transverse momentum of diphoton system. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DPT
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DPT(2GAMMA) IN FB*GEV**-1
+*xheader: PT(2GAMMA) IN GEV 
+*data: x : y 
+ 0.0 TO 20.0; 0.073 +- 0.307 (DSYS=0.061:bkg_model_uncorr,DSYS=0.007:fit,DSYS=0.002:lumi,DSYS=0.001:PID,DSYS=0.001:iso,DSYS=0.0:trig,DSYS=0.0:pileup,DSYS=+0.002,-0.001:gen_model);
+ 20.0 TO 30.0; 1.315 +- 0.394 (DSYS=0.072:bkg_model_uncorr,DSYS=0.072:fit,DSYS=0.037:lumi,DSYS=0.013:PID,DSYS=0.013:iso,DSYS=0.007:trig,DSYS=0.0:pileup,DSYS=+0.037,-0.019:gen_model);
+ 30.0 TO 40.0; 0.682 +- 0.317 (DSYS=0.064:bkg_model_uncorr,DSYS=0.038:fit,DSYS=0.019:lumi,DSYS=0.007:PID,DSYS=0.007:iso,DSYS=0.003:trig,DSYS=0.0:pileup,DSYS=+0.021,-0.004:gen_model);
+ 40.0 TO 50.0; 0.788 +- 0.269 (DSYS=0.042:bkg_model_uncorr,DSYS=0.044:fit,DSYS=0.022:lumi,DSYS=0.008:PID,DSYS=0.008:iso,DSYS=0.004:trig,DSYS=0.0:pileup,DSYS=+0.027,-0.009:gen_model);
+ 50.0 TO 60.0; 0.379 +- 0.225 (DSYS=0.031:bkg_model_uncorr,DSYS=0.023:fit,DSYS=0.011:lumi,DSYS=0.004:PID,DSYS=0.004:iso,DSYS=0.002:trig,DSYS=0.0:pileup,DSYS=+0.014,-0.002:gen_model);
+ 60.0 TO 80.0; 0.253 +- 0.122 (DSYS=0.017:bkg_model_uncorr,DSYS=0.016:fit,DSYS=0.007:lumi,DSYS=0.003:PID,DSYS=0.003:iso,DSYS=0.001:trig,DSYS=0.0:pileup,DSYS=+0.009,-0.001:gen_model);
+ 80.0 TO 100.0; 0.1797 +- 0.0855 (DSYS=0.0059:bkg_model_uncorr,DSYS=0.0111:fit,DSYS=0.005:lumi,DSYS=0.0018:PID,DSYS=0.0018:iso,DSYS=0.00090:trig,DSYS=0.0:pileup,DSYS=+0.0062,-0.000800:gen_model);
+ 100.0 TO 200.0; 0.0193 +- 0.0155 (DSYS=0.0014:bkg_model_uncorr,DSYS=0.0012:fit,DSYS=0.00050:lumi,DSYS=0.00020:PID,DSYS=0.00020:iso,DSYS=0.00010:trig,DSYS=0.0:pileup,DSYS=+0.00060,-0.000100:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 4b
+*dscomment: Measured differential cross section with associated uncertainties as a function of absolute rapidity of diphoton system. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DYRAP
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DYRAP(2GAMMA) IN FB
+*xheader: YRAP(2GAMMA) 
+*data: x : y 
+ 0.0 TO 0.3; 23.7 +- 11.0 (DSYS=0.5:bkg_model_uncorr,DSYS=1.1:fit,DSYS=0.7:lumi,DSYS=0.2:PID,DSYS=0.2:iso,DSYS=0.1:trig,DSYS=0.0:pileup,DSYS=+0.1,-0.2:gen_model);
+ 0.3 TO 0.6; 25.4 +- 11.3 (DSYS=0.4:bkg_model_uncorr,DSYS=1.3:fit,DSYS=0.7:lumi,DSYS=0.3:PID,DSYS=0.3:iso,DSYS=0.1:trig,DSYS=0.0:pileup,DSYS=+0.1,-0.3:gen_model);
+ 0.6 TO 0.9; 13.4 +- 12.4 (DSYS=0.4:bkg_model_uncorr,DSYS=0.7:fit,DSYS=0.4:lumi,DSYS=0.1:PID,DSYS=0.1:iso,DSYS=0.1:trig,DSYS=0.0:pileup,DSYS=0.1:gen_model);
+ 0.9 TO 1.2; 30.5 +- 14.6 (DSYS=0.4:bkg_model_uncorr,DSYS=2.0:fit,DSYS=0.9:lumi,DSYS=0.3:PID,DSYS=0.3:iso,DSYS=0.2:trig,DSYS=0.0:pileup,DSYS=0.3:gen_model);
+ 1.2 TO 1.6; 28.6 +- 12.7 (DSYS=0.7:bkg_model_uncorr,DSYS=2.1:fit,DSYS=0.8:lumi,DSYS=0.3:PID,DSYS=0.3:iso,DSYS=0.1:trig,DSYS=0.0:pileup,DSYS=0.3:gen_model);
+ 1.6 TO 2.4; 7.86 +- 5.5 (DSYS=0.37:bkg_model_uncorr,DSYS=0.88:fit,DSYS=0.22:lumi,DSYS=0.08:PID,DSYS=0.08:iso,DSYS=0.04:trig,DSYS=0.0:pileup,DSYS=0.07:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 5a
+*dscomment: Measured differential cross section with associated uncertainties as a function of multiplicity of jets with transverse momentum pT(jet) > 30 GeV. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: SIG
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DMULT(JET,PT>30 GEV) IN FB
+*xheader: MULT(JET,PT>30 GEV) 
+*data: x : y 
+ 0; 21.88 +- 8.0 (DSYS=0.91:bkg_model_uncorr,DSYS=1.28:fit,DSYS=0.61:lumi,DSYS=0.22:PID,DSYS=0.22:iso,DSYS=0.11:trig,DSYS=0.17:pileup,DSYS=0.31:JER,DSYS=0.08:jes_base1,DSYS=-0.19,+0.2:jes_base2,DSYS=0.17:jes_base3,DSYS=-0.06,+0.06:jes_base4,DSYS=0.02:jes_base5,DSYS=0.04:jes_base6,DSYS=+0.38,-0.36:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=0.06:jes_pu_npv,DSYS=0.06:jes_pu_mu,DSYS=0.01:jes_pu_pt,DSYS=0.16:jes_pu_rho,DSYS=+0.6,-0.58:jes_flav_comp,DSYS=+0.31,-0.3:jes_flav_resp,DSYS=-0.02,+0.03:JVF,DSYS=+0.75,-0.15:gen_model);
+ 1; 12.33 +- 4.55 (DSYS=0.76:bkg_model_uncorr,DSYS=0.8:fit,DSYS=0.35:lumi,DSYS=0.12:PID,DSYS=0.12:iso,DSYS=0.06:trig,DSYS=-0.08,+0.08:pileup,DSYS=-0.23,+0.23:JER,DSYS=-0.03,+0.03:jes_base1,DSYS=0.07:jes_base2,DSYS=-0.07,+0.06:jes_base3,DSYS=0.02:jes_base4,DSYS=-0.01,+0.01:jes_base5,DSYS=-0.01,+0.01:jes_base6,DSYS=-0.14,+0.13:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.02,+0.02:jes_pu_npv,DSYS=-0.02,+0.02:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.06,+0.06:jes_pu_rho,DSYS=-0.21,+0.24:jes_flav_comp,DSYS=-0.12,+0.11:jes_flav_resp,DSYS=0.01:JVF,DSYS=+0.69,-0.19:gen_model);
+ 2; 5.19 +- 2.41 (DSYS=0.34:bkg_model_uncorr,DSYS=0.33:fit,DSYS=0.15:lumi,DSYS=0.05:PID,DSYS=0.1:iso,DSYS=0.03:trig,DSYS=-0.07,+0.07:pileup,DSYS=-0.04,+0.04:JER,DSYS=-0.03,+0.04:jes_base1,DSYS=0.09:jes_base2,DSYS=-0.07,+0.08:jes_base3,DSYS=0.03:jes_base4,DSYS=-0.01,+0.01:jes_base5,DSYS=-0.02,+0.02:jes_base6,DSYS=-0.17,+0.18:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.03,+0.02:jes_pu_npv,DSYS=-0.03,+0.02:jes_pu_mu,DSYS=-0.01,-0.0:jes_pu_pt,DSYS=-0.07,+0.07:jes_pu_rho,DSYS=-0.25,+0.27:jes_flav_comp,DSYS=-0.13,+0.14:jes_flav_resp,DSYS=0.01:JVF,DSYS=+0.13,-0.18:gen_model);
+ >= 3.0; 3.99 +- 1.33 (DSYS=0.15:bkg_model_uncorr,DSYS=0.21:fit,DSYS=0.11:lumi,DSYS=0.04:PID,DSYS=0.16:iso,DSYS=0.02:trig,DSYS=-0.13,+0.13:pileup,DSYS=-0.14,+0.14:JER,DSYS=-0.05,+0.05:jes_base1,DSYS=+0.13,-0.12:jes_base2,DSYS=-0.11,+0.11:jes_base3,DSYS=0.04:jes_base4,DSYS=-0.01,+0.01:jes_base5,DSYS=-0.02,+0.02:jes_base6,DSYS=-0.21,+0.23:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.04,+0.04:jes_pu_npv,DSYS=-0.04,+0.04:jes_pu_mu,DSYS=+0.0,+0.01:jes_pu_pt,DSYS=-0.1,+0.1:jes_pu_rho,DSYS=-0.36,+0.41:jes_flav_comp,DSYS=-0.19,+0.21:jes_flav_resp,DSYS=+0.01,-0.02:JVF,DSYS=+0.25,-0.19:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 5b
+*dscomment: Measured differential cross section with associated uncertainties as a function of multiplicity of jets with transverse momentum pT(jet) > 30 GeV. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: SIG
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DMULT(JET,PT>50 GEV) IN FB
+*xheader: MULT(JET,PT>50 GEV) 
+*data: x : y 
+ 0; 30.67 +- 8.62 (DSYS=0.55:bkg_model_uncorr,DSYS=1.79:fit,DSYS=0.86:lumi,DSYS=0.31:PID,DSYS=0.31:iso,DSYS=0.15:trig,DSYS=0.04:pileup,DSYS=0.13:JER,DSYS=0.06:jes_base1,DSYS=-0.14,+0.14:jes_base2,DSYS=0.11:jes_base3,DSYS=-0.03,+0.03:jes_base4,DSYS=+0.01,-0.0:jes_base5,DSYS=0.02:jes_base6,DSYS=+0.25,-0.24:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=0.02:jes_pu_npv,DSYS=0.02:jes_pu_mu,DSYS=+0.02,-0.01:jes_pu_pt,DSYS=+0.08,-0.07:jes_pu_rho,DSYS=+0.42,-0.41:jes_flav_comp,DSYS=0.22:jes_flav_resp,DSYS=0.0:JVF,DSYS=+1.08,-0.22:gen_model);
+ 1; 7.78 +- 3.36 (DSYS=0.4:bkg_model_uncorr,DSYS=3.26:fit,DSYS=0.22:lumi,DSYS=0.08:PID,DSYS=0.08:iso,DSYS=0.04:trig,DSYS=-0.02,+0.02:pileup,DSYS=-0.11,+0.11:JER,DSYS=-0.03,+0.03:jes_base1,DSYS=+0.09,-0.08:jes_base2,DSYS=-0.06,+0.07:jes_base3,DSYS=0.02:jes_base4,DSYS=0.0:jes_base5,DSYS=-0.01,+0.01:jes_base6,DSYS=-0.13,+0.14:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.01,+0.01:jes_pu_npv,DSYS=-0.01,+0.01:jes_pu_mu,DSYS=-0.01,+0.01:jes_pu_pt,DSYS=-0.04,+0.04:jes_pu_rho,DSYS=-0.24,+0.27:jes_flav_comp,DSYS=-0.12,+0.14:jes_flav_resp,DSYS=0.0:JVF,DSYS=+0.26,-0.17:gen_model);
+ 2; 3.77 +- 1.52 (DSYS=0.17:bkg_model_uncorr,DSYS=0.84:fit,DSYS=0.11:lumi,DSYS=0.04:PID,DSYS=0.08:iso,DSYS=0.02:trig,DSYS=-0.03,+0.03:pileup,DSYS=-0.01,+0.01:JER,DSYS=-0.04,+0.03:jes_base1,DSYS=+0.08,-0.09:jes_base2,DSYS=-0.07,+0.07:jes_base3,DSYS=0.02:jes_base4,DSYS=0.0:jes_base5,DSYS=-0.01,+0.01:jes_base6,DSYS=-0.16,+0.16:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.02,+0.02:jes_pu_npv,DSYS=-0.02,+0.01:jes_pu_mu,DSYS=-0.01,+0.01:jes_pu_pt,DSYS=-0.05,+0.04:jes_pu_rho,DSYS=-0.23,+0.24:jes_flav_comp,DSYS=-0.13,+0.13:jes_flav_resp,DSYS=0.0:JVF,DSYS=+0.1,-0.09:gen_model);
+ >= 3.0; 1.652 +- 0.705 (DSYS=0.063:bkg_model_uncorr,DSYS=0.093:fit,DSYS=0.046:lumi,DSYS=0.017:PID,DSYS=0.066:iso,DSYS=0.008:trig,DSYS=-0.029,+0.029:pileup,DSYS=-0.023,+0.023:JER,DSYS=-0.021,+0.021:jes_base1,DSYS=+0.047,-0.05:jes_base2,DSYS=-0.039,+0.037:jes_base3,DSYS=+0.012,-0.013:jes_base4,DSYS=-0.002,+0.002:jes_base5,DSYS=-0.007,+0.008:jes_base6,DSYS=-0.076,+0.075:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.01,+0.008:jes_pu_npv,DSYS=-0.006,+0.006:jes_pu_mu,DSYS=-0.004,+0.004:jes_pu_pt,DSYS=-0.027,+0.025:jes_pu_rho,DSYS=-0.144,+0.157:jes_flav_comp,DSYS=-0.079,+0.079:jes_flav_resp,DSYS=0.0:JVF,DSYS=+0.063,-0.083:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 6a
+*dscomment: Measured differential cross section with associated uncertainties as a function of transverse momentum of the leading jet. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DPT
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DPT(JET1) IN FB*GEV**-1
+*xheader: PT(JET1) IN GEV 
+*data: x : y 
+ 0.0 TO 30.0; 0.728 +- 0.266 (DSYS=0.016:bkg_model_uncorr,DSYS=0.043:fit,DSYS=0.02:lumi,DSYS=0.007:PID,DSYS=0.007:iso,DSYS=0.004:trig,DSYS=0.006:pileup,DSYS=0.01:JER,DSYS=-0.001,+0.001:JVF,DSYS=0.003:jes_base1,DSYS=-0.006,+0.007:jes_base2,DSYS=0.006:jes_base3,DSYS=-0.002,+0.002:jes_base4,DSYS=0.001:jes_base5,DSYS=0.001:jes_base6,DSYS=+0.013,-0.012:jes_fwd_model,DSYS=0.002:jes_pu_npv,DSYS=0.002:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=0.005:jes_pu_rho,DSYS=+0.02,-0.019:jes_flav_comp,DSYS=0.01:jes_flav_resp,DSYS=+0.025,-0.005:gen_model);
+ 30.0 TO 50.0; 0.393 +- 0.182 (DSYS=0.009:bkg_model_uncorr,DSYS=0.023:fit,DSYS=0.011:lumi,DSYS=0.004:PID,DSYS=0.004:iso,DSYS=0.002:trig,DSYS=-0.008,+0.008:pileup,DSYS=-0.01,+0.01:JER,DSYS=0.001:JVF,DSYS=-0.001,+0.001:jes_base1,DSYS=0.003:jes_base2,DSYS=-0.003,+0.003:jes_base3,DSYS=+0.002,-0.001:jes_base4,DSYS=-0.001,+0.001:jes_base5,DSYS=-0.001,+0.001:jes_base6,DSYS=-0.007,+0.007:jes_fwd_model,DSYS=-0.002,+0.002:jes_pu_npv,DSYS=-0.002,+0.002:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.005,+0.005:jes_pu_rho,DSYS=-0.01,+0.01:jes_flav_comp,DSYS=-0.005,+0.005:jes_flav_resp,DSYS=+0.028,-0.007:gen_model);
+ 50.0 TO 70.0; 0.115 +- 0.129 (DSYS=0.006:bkg_model_uncorr,DSYS=0.007:fit,DSYS=0.003:lumi,DSYS=0.001:PID,DSYS=0.001:iso,DSYS=0.001:trig,DSYS=-0.001,+0.001:pileup,DSYS=0.0:JER,DSYS=0.0:JVF,DSYS=0.0:jes_base1,DSYS=0.001:jes_base2,DSYS=-0.001,+0.001:jes_base3,DSYS=0.001:jes_base4,DSYS=0.0:jes_base5,DSYS=0.0:jes_base6,DSYS=-0.002,+0.002:jes_fwd_model,DSYS=0.0:jes_pu_npv,DSYS=0.0:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.001,+0.001:jes_pu_rho,DSYS=-0.003,+0.004:jes_flav_comp,DSYS=-0.002,+0.002:jes_flav_resp,DSYS=+0.005,-0.003:gen_model);
+ 70.0 TO 100.0; 0.1383 +- 0.0718 (DSYS=0.0086:bkg_model_uncorr,DSYS=0.0078:fit,DSYS=0.0039:lumi,DSYS=0.0014:PID,DSYS=0.0014:iso,DSYS=0.00070:trig,DSYS=-0.000400,+0.00040:pileup,DSYS=0.00020:JER,DSYS=0.0:JVF,DSYS=-0.000700,+0.00060:jes_base1,DSYS=+0.0017,-0.002:jes_base2,DSYS=-0.002,+0.0018:jes_base3,DSYS=+0.00070,-0.000800:jes_base4,DSYS=-0.000100,+0.00010:jes_base5,DSYS=-0.000400,+0.00030:jes_base6,DSYS=-0.0032,+0.0031:jes_fwd_model,DSYS=-0.000500,+0.00030:jes_pu_npv,DSYS=-0.000300,+0.00030:jes_pu_mu,DSYS=-0.000300,+0.00020:jes_pu_pt,DSYS=-0.0011,+0.00090:jes_pu_rho,DSYS=-0.0052,+0.0054:jes_flav_comp,DSYS=-0.0029,+0.0026:jes_flav_resp,DSYS=+0.0036,-0.0044:gen_model);
+ 100.0 TO 140.0; 0.0706 +- 0.0354 (DSYS=0.0036:bkg_model_uncorr,DSYS=0.004:fit,DSYS=0.002:lumi,DSYS=0.00070:PID,DSYS=0.00070:iso,DSYS=0.00040:trig,DSYS=0.0:pileup,DSYS=-0.0014,+0.0014:JER,DSYS=0.0:JVF,DSYS=-0.000600,+0.00050:jes_base1,DSYS=0.0011:jes_base2,DSYS=-0.000700,+0.00070:jes_base3,DSYS=0.00010:jes_base4,DSYS=0.00010:jes_base5,DSYS=-0.000300,+0.00030:jes_base6,DSYS=-0.002,+0.002:jes_fwd_model,DSYS=-0.000100,+0.00010:jes_pu_npv,DSYS=-0.000100,+0.00010:jes_pu_mu,DSYS=-0.000100,-0.0:jes_pu_pt,DSYS=-0.000500,+0.00050:jes_pu_rho,DSYS=-0.0033,+0.0035:jes_flav_comp,DSYS=-0.0018,+0.002:jes_flav_resp,DSYS=+0.0014,-0.0012:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 6b
+*dscomment: Measured differential cross section with associated uncertainties as a function of absolute rapidity of the leading jet. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DYRAP
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DYRAP(JET1) IN FB
+*xheader: YRAP(JET1) 
+*data: x : y 
+ 0.0 TO 1.0; 11.04 +- 3.63 (DSYS=0.31:bkg_model_uncorr,DSYS=0.54:fit,DSYS=0.31:lumi,DSYS=0.11:PID,DSYS=0.11:iso,DSYS=0.06:trig,DSYS=-0.07,+0.07:pileup,DSYS=0.02:JER,DSYS=-0.05,+0.04:jes_base1,DSYS=0.11:jes_base2,DSYS=-0.1,+0.09:jes_base3,DSYS=0.03:jes_base4,DSYS=-0.01,+0.01:jes_base5,DSYS=-0.02,+0.02:jes_base6,DSYS=0.05:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.03,+0.03:jes_pu_npv,DSYS=0.0:jes_pu_mu,DSYS=-0.01,-0.0:jes_pu_pt,DSYS=-0.1,+0.09:jes_pu_rho,DSYS=-0.36,+0.39:jes_flav_comp,DSYS=-0.2,+0.21:jes_flav_resp,DSYS=+0.01,-0.02:JVF,DSYS=+0.48,-0.14:gen_model);
+ 1.0 TO 2.0; 5.93 +- 3.05 (DSYS=0.17:bkg_model_uncorr,DSYS=0.29:fit,DSYS=0.17:lumi,DSYS=0.06:PID,DSYS=0.06:iso,DSYS=0.03:trig,DSYS=-0.04,+0.04:pileup,DSYS=-0.02,+0.02:JER,DSYS=-0.03,+0.03:jes_base1,DSYS=0.06:jes_base2,DSYS=-0.05,+0.05:jes_base3,DSYS=0.02:jes_base4,DSYS=-0.01,+0.01:jes_base5,DSYS=-0.01,+0.01:jes_base6,DSYS=-0.12,+0.12:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.01,+0.02:jes_pu_npv,DSYS=0.0:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.05,+0.05:jes_pu_rho,DSYS=-0.22,+0.24:jes_flav_comp,DSYS=-0.12,+0.12:jes_flav_resp,DSYS=0.01:JVF,DSYS=+0.27,-0.11:gen_model);
+ 2.0 TO 3.0; 3.03 +- 2.07 (DSYS=0.14:bkg_model_uncorr,DSYS=0.14:fit,DSYS=0.08:lumi,DSYS=0.03:PID,DSYS=0.03:iso,DSYS=0.02:trig,DSYS=-0.05,+0.05:pileup,DSYS=-0.09,+0.09:JER,DSYS=-0.01,+0.01:jes_base1,DSYS=+0.03,-0.04:jes_base2,DSYS=-0.03,+0.03:jes_base3,DSYS=0.01:jes_base4,DSYS=0.0:jes_base5,DSYS=-0.01,+0.01:jes_base6,DSYS=-0.09,+0.09:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.01,+0.01:jes_pu_npv,DSYS=-0.03,+0.02:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.03,+0.03:jes_pu_rho,DSYS=-0.09,+0.09:jes_flav_comp,DSYS=-0.04,+0.04:jes_flav_resp,DSYS=0.0:JVF,DSYS=+0.16,-0.08:gen_model);
+ 3.0 TO 4.4; 0.834 +- 0.823 (DSYS=0.039:bkg_model_uncorr,DSYS=0.04:fit,DSYS=0.023:lumi,DSYS=0.008:PID,DSYS=0.008:iso,DSYS=0.004:trig,DSYS=-0.024,+0.024:pileup,DSYS=-0.077,+0.077:JER,DSYS=-0.006,+0.006:jes_base1,DSYS=+0.017,-0.015:jes_base2,DSYS=-0.013,+0.015:jes_base3,DSYS=+0.004,-0.005:jes_base4,DSYS=-0.002,+0.002:jes_base5,DSYS=-0.003,+0.003:jes_base6,DSYS=-0.072,+0.085:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.005,+0.005:jes_pu_npv,DSYS=-0.013,+0.013:jes_pu_mu,DSYS=+0.0,+0.001:jes_pu_pt,DSYS=-0.011,+0.012:jes_pu_rho,DSYS=-0.026,+0.03:jes_flav_comp,DSYS=-0.011,+0.013:jes_flav_resp,DSYS=0.0:JVF,DSYS=+0.059,-0.042:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 6c
+*dscomment: Measured differential cross section with associated uncertainties as a function of scalar transverse momentum sum of all jets. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DHT
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DHT IN FB*GEV**-1
+*xheader: HT IN GEV 
+*data: x : y 
+ 0.0 TO 30.0; 0.723 +- 0.266 (DSYS=0.019:bkg_model_uncorr,DSYS=0.043:fit,DSYS=0.02:lumi,DSYS=0.007:PID,DSYS=0.007:iso,DSYS=0.004:trig,DSYS=0.006:pileup,DSYS=0.01:JER,DSYS=0.003:jes_base1,DSYS=-0.006,+0.007:jes_base2,DSYS=0.006:jes_base3,DSYS=-0.002,+0.002:jes_base4,DSYS=0.001:jes_base5,DSYS=0.001:jes_base6,DSYS=0.012:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=0.002:jes_pu_npv,DSYS=0.002:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=0.005:jes_pu_rho,DSYS=+0.02,-0.019:jes_flav_comp,DSYS=0.01:jes_flav_resp,DSYS=-0.001,+0.001:JVF,DSYS=+0.025,-0.005:gen_model);
+ 30.0 TO 50.0; 0.353 +- 0.172 (DSYS=0.006:bkg_model_uncorr,DSYS=0.022:fit,DSYS=0.01:lumi,DSYS=0.004:PID,DSYS=0.007:iso,DSYS=0.002:trig,DSYS=-0.005,+0.005:pileup,DSYS=-0.007,+0.007:JER,DSYS=-0.001,+0.001:jes_base1,DSYS=0.002:jes_base2,DSYS=-0.002,+0.002:jes_base3,DSYS=0.001:jes_base4,DSYS=-0.001,+0.001:jes_base5,DSYS=-0.001,+0.001:jes_base6,DSYS=-0.005,+0.005:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.001,+0.001:jes_pu_npv,DSYS=-0.001,+0.001:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.003,+0.003:jes_pu_rho,DSYS=-0.006,+0.007:jes_flav_comp,DSYS=-0.003,+0.003:jes_flav_resp,DSYS=0.001:JVF,DSYS=+0.026,-0.006:gen_model);
+ 50.0 TO 70.0; 0.132 +- 0.114 (DSYS=0.003:bkg_model_uncorr,DSYS=0.008:fit,DSYS=0.004:lumi,DSYS=0.001:PID,DSYS=0.003:iso,DSYS=0.001:trig,DSYS=-0.001,+0.001:pileup,DSYS=0.0:JER,DSYS=0.0:jes_base1,DSYS=0.001:jes_base2,DSYS=-0.001,+0.001:jes_base3,DSYS=0.0:jes_base4,DSYS=0.0:jes_base5,DSYS=0.0:jes_base6,DSYS=-0.001,+0.002:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=0.0:jes_pu_npv,DSYS=0.0:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=+0.0,+0.001:jes_pu_rho,DSYS=-0.002,+0.003:jes_flav_comp,DSYS=-0.001,+0.002:jes_flav_resp,DSYS=0.0:JVF,DSYS=+0.007,-0.004:gen_model);
+ 70.0 TO 150.0; 0.0416 +- 0.0352 (DSYS=0.0024:bkg_model_uncorr,DSYS=0.0026:fit,DSYS=0.0012:lumi,DSYS=0.00040:PID,DSYS=0.00080:iso,DSYS=0.00020:trig,DSYS=-0.000500,+0.00050:pileup,DSYS=-0.000600,+0.00060:JER,DSYS=-0.000200,+0.00020:jes_base1,DSYS=+0.00050,-0.000600:jes_base2,DSYS=-0.000500,+0.00050:jes_base3,DSYS=0.00020:jes_base4,DSYS=-0.000100,+0.00010:jes_base5,DSYS=-0.000100,+0.00010:jes_base6,DSYS=-0.001,+0.001:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.000200,+0.00020:jes_pu_npv,DSYS=-0.000200,+0.00010:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.000500,+0.00040:jes_pu_rho,DSYS=-0.0016,+0.0017:jes_flav_comp,DSYS=-0.000900,+0.00090:jes_flav_resp,DSYS=+0.0,-0.000100:JVF,DSYS=+0.001,-0.000900:gen_model);
+ 150.0 TO 250.0; 0.0496 +- 0.0147 (DSYS=0.00070:bkg_model_uncorr,DSYS=0.0031:fit,DSYS=0.0014:lumi,DSYS=0.00050:PID,DSYS=0.001:iso,DSYS=0.00020:trig,DSYS=-0.000500,+0.00050:pileup,DSYS=-0.001,+0.001:JER,DSYS=-0.000500,+0.00040:jes_base1,DSYS=+0.001,-0.0011:jes_base2,DSYS=-0.000700,+0.00070:jes_base3,DSYS=0.00020:jes_base4,DSYS=0.0:jes_base5,DSYS=-0.000200,+0.00020:jes_base6,DSYS=-0.0019,+0.002:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.000200,+0.00020:jes_pu_npv,DSYS=-0.000200,+0.00020:jes_pu_mu,DSYS=-0.000100,+0.00010:jes_pu_pt,DSYS=-0.000600,+0.00060:jes_pu_rho,DSYS=-0.003,+0.0032:jes_flav_comp,DSYS=-0.0016,+0.0017:jes_flav_resp,DSYS=0.0:JVF,DSYS=+0.001,-0.0015:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 6d
+*dscomment: Measured differential cross section with associated uncertainties as a function of transverse momentum of second leading jet. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DPT
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DPT(JET2) IN FB*GEV**-1
+*xheader: PT(JET2) IN GEV 
+*data: x : y 
+ 0.0 TO 30.0; 0.385 +- 0.152 (DSYS=0.013:bkg_model_uncorr,DSYS=0.024:fit,DSYS=0.011:lumi,DSYS=0.004:PID,DSYS=0.008:iso,DSYS=0.002:trig,DSYS=0.0:pileup,DSYS=-0.007,+0.007:JER,DSYS=-0.001,+0.001:jes_base1,DSYS=0.002:jes_base2,DSYS=-0.002,+0.002:jes_base3,DSYS=0.001:jes_base4,DSYS=0.0:jes_base5,DSYS=0.0:jes_base6,DSYS=-0.004,+0.004:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.001,+0.001:jes_pu_npv,DSYS=-0.001,+0.001:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.002,+0.002:jes_pu_rho,DSYS=-0.007,+0.007:jes_flav_comp,DSYS=-0.004,+0.004:jes_flav_resp,DSYS=0.0:JVF,DSYS=+0.021,-0.006:gen_model);
+ 30.0 TO 50.0; 0.199 +- 0.109 (DSYS=0.006:bkg_model_uncorr,DSYS=0.013:fit,DSYS=0.006:lumi,DSYS=0.002:PID,DSYS=0.004:iso,DSYS=0.001:trig,DSYS=-0.002,+0.002:pileup,DSYS=-0.004,+0.004:JER,DSYS=-0.001,+0.002:jes_base1,DSYS=0.004:jes_base2,DSYS=-0.003,+0.004:jes_base3,DSYS=0.001:jes_base4,DSYS=-0.001,+0.001:jes_base5,DSYS=-0.001,+0.001:jes_base6,DSYS=-0.007,+0.008:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.001,+0.001:jes_pu_npv,DSYS=-0.002,+0.001:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.004,+0.004:jes_pu_rho,DSYS=-0.011,+0.012:jes_flav_comp,DSYS=-0.006,+0.006:jes_flav_resp,DSYS=0.001:JVF,DSYS=+0.006,-0.008:gen_model);
+ 50.0 TO 70.0; 0.1081 +- 0.0621 (DSYS=0.003:bkg_model_uncorr,DSYS=0.0064:fit,DSYS=0.003:lumi,DSYS=0.0011:PID,DSYS=0.0022:iso,DSYS=0.00050:trig,DSYS=-0.000700,+0.00070:pileup,DSYS=-0.000100,+0.00010:JER,DSYS=-0.001,+0.00090:jes_base1,DSYS=+0.0023,-0.0025:jes_base2,DSYS=-0.0023,+0.0022:jes_base3,DSYS=+0.00080,-0.000900:jes_base4,DSYS=-0.000300,+0.00020:jes_base5,DSYS=-0.000300,+0.00020:jes_base6,DSYS=-0.0045,+0.0044:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.000600,+0.00050:jes_pu_npv,DSYS=-0.000500,+0.00050:jes_pu_mu,DSYS=-0.000100,+0.00010:jes_pu_pt,DSYS=-0.0016,+0.0015:jes_pu_rho,DSYS=-0.0066,+0.0067:jes_flav_comp,DSYS=-0.0039,+0.0034:jes_flav_resp,DSYS=0.0:JVF,DSYS=+0.0031,-0.0034:gen_model);
+ 70.0 TO 140.0; 0.0436 +- 0.0155 (DSYS=0.00090:bkg_model_uncorr,DSYS=0.0024:fit,DSYS=0.0012:lumi,DSYS=0.00040:PID,DSYS=0.00090:iso,DSYS=0.00020:trig,DSYS=-0.000100,+0.00010:pileup,DSYS=-0.000100,+0.00010:JER,DSYS=-0.000500,+0.00040:jes_base1,DSYS=0.0011:jes_base2,DSYS=-0.000900,+0.00070:jes_base3,DSYS=0.00020:jes_base4,DSYS=+0.00010,-0.0:jes_base5,DSYS=-0.000200,+0.00020:jes_base6,DSYS=-0.002,+0.0021:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.000200,+0.00020:jes_pu_npv,DSYS=-0.000200,+0.00010:jes_pu_mu,DSYS=-0.000200,+0.00010:jes_pu_pt,DSYS=-0.000500,+0.00040:jes_pu_rho,DSYS=-0.0031,+0.0035:jes_flav_comp,DSYS=-0.0017,+0.0019:jes_flav_resp,DSYS=0.0:JVF,DSYS=+0.0012,-0.0011:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 7a
+*dscomment: Measured differential cross section with associated uncertainties as a function of rapidity separation of leading two jets. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DYRAP
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DDELTAYRAP(2JET) IN FB
+*xheader: DELTAYRAP(2JET) 
+*data: x : y 
+ 0.0 TO 2.0; 2.83 +- 1.12 (DSYS=0.1:bkg_model_uncorr,DSYS=0.16:fit,DSYS=0.08:lumi,DSYS=0.03:PID,DSYS=0.06:iso,DSYS=0.01:trig,DSYS=-0.05,+0.05:pileup,DSYS=-0.06,+0.06:JER,DSYS=-0.02,+0.03:jes_base1,DSYS=0.06:jes_base2,DSYS=-0.05,+0.05:jes_base3,DSYS=0.02:jes_base4,DSYS=-0.01,+0.01:jes_base5,DSYS=-0.01,+0.01:jes_base6,DSYS=-0.08,+0.08:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.01,+0.01:jes_nonclosure,DSYS=-0.02,+0.02:jes_pu_npv,DSYS=-0.01,+0.01:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.05,+0.05:jes_pu_rho,DSYS=-0.18,+0.2:jes_flav_comp,DSYS=-0.1,+0.11:jes_flav_resp,DSYS=0.01:JVF,DSYS=+0.1,-0.08:gen_model);
+ 2.0 TO 4.0; 1.313 +- 0.719 (DSYS=0.13:bkg_model_uncorr,DSYS=0.081:fit,DSYS=0.037:lumi,DSYS=0.013:PID,DSYS=0.026:iso,DSYS=0.007:trig,DSYS=-0.025,+0.025:pileup,DSYS=-0.02,+0.02:JER,DSYS=-0.01,+0.011:jes_base1,DSYS=+0.027,-0.026:jes_base2,DSYS=-0.022,+0.024:jes_base3,DSYS=0.008:jes_base4,DSYS=-0.003,+0.003:jes_base5,DSYS=-0.005,+0.005:jes_base6,DSYS=-0.05,+0.056:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.006,+0.005:jes_nonclosure,DSYS=-0.008,+0.008:jes_pu_npv,DSYS=-0.008,+0.008:jes_pu_mu,DSYS=-0.001,+0.001:jes_pu_pt,DSYS=-0.021,+0.022:jes_pu_rho,DSYS=-0.077,+0.082:jes_flav_comp,DSYS=-0.04,+0.043:jes_flav_resp,DSYS=+0.002,-0.004:JVF,DSYS=+0.032,-0.062:gen_model);
+ 4.0 TO 5.5; 0.671 +- 0.391 (DSYS=0.057:bkg_model_uncorr,DSYS=0.037:fit,DSYS=0.019:lumi,DSYS=0.007:PID,DSYS=0.013:iso,DSYS=0.003:trig,DSYS=-0.01,+0.01:pileup,DSYS=0.0:JER,DSYS=-0.005,+0.005:jes_base1,DSYS=0.013:jes_base2,DSYS=-0.011,+0.011:jes_base3,DSYS=0.004:jes_base4,DSYS=-0.001,+0.002:jes_base5,DSYS=-0.003,+0.003:jes_base6,DSYS=-0.037,+0.039:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.002,+0.003:jes_nonclosure,DSYS=-0.004,+0.003:jes_pu_npv,DSYS=-0.008,+0.005:jes_pu_mu,DSYS=-0.001,+0.001:jes_pu_pt,DSYS=-0.01,+0.01:jes_pu_rho,DSYS=-0.031,+0.035:jes_flav_comp,DSYS=-0.016,+0.018:jes_flav_resp,DSYS=0.001:JVF,DSYS=+0.015,-0.028:gen_model);
+ 5.5 TO 8.8; 0.0703 +- 0.0732 (DSYS=0.0058:bkg_model_uncorr,DSYS=0.0085:fit,DSYS=0.002:lumi,DSYS=0.00070:PID,DSYS=0.0014:iso,DSYS=0.00040:trig,DSYS=-0.0014,+0.0014:pileup,DSYS=-0.000800,+0.00080:JER,DSYS=-0.000500,+0.00080:jes_base1,DSYS=+0.0018,-0.0016:jes_base2,DSYS=-0.0014,+0.0016:jes_base3,DSYS=+0.00060,-0.000400:jes_base4,DSYS=-0.000200,+0.00020:jes_base5,DSYS=-0.000300,+0.00040:jes_base6,DSYS=-0.0063,+0.0073:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.000100,+0.00010:jes_nonclosure,DSYS=-0.000500,+0.00060:jes_pu_npv,DSYS=-0.0012,+0.0012:jes_pu_mu,DSYS=-0.000100,+0.00010:jes_pu_pt,DSYS=-0.0012,+0.0014:jes_pu_rho,DSYS=-0.0033,+0.0037:jes_flav_comp,DSYS=-0.0014,+0.0018:jes_flav_resp,DSYS=0.0:JVF,DSYS=+0.003,-0.0036:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 7b
+*dscomment: Measured differential cross section with associated uncertainties as a function of azimuthal angle between diphoton and dijet systems. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DPHI
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DDPHI(2GAMMA,2JET) IN FB*RAD**-1
+*xheader: DPHI(2GAMMA,2JET) IN RAD 
+*data: x : y 
+ 0.0 TO 2.6; 1.093 +- 0.495 (DSYS=0.018:bkg_model_uncorr,DSYS=0.062:fit,DSYS=0.031:lumi,DSYS=0.011:PID,DSYS=0.022:iso,DSYS=0.005:trig,DSYS=-0.072,+0.072:pileup,DSYS=-0.214,+0.214:JER,DSYS=-0.011,+0.013:jes_base1,DSYS=0.03:jes_base2,DSYS=-0.025,+0.026:jes_base3,DSYS=+0.01,-0.009:jes_base4,DSYS=-0.004,+0.003:jes_base5,DSYS=-0.006,+0.006:jes_base6,DSYS=-0.061,+0.065:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.009,+0.01:jes_pu_npv,DSYS=-0.012,+0.011:jes_pu_mu,DSYS=-0.002,+0.001:jes_pu_pt,DSYS=-0.024,+0.024:jes_pu_rho,DSYS=-0.084,+0.093:jes_flav_comp,DSYS=-0.045,+0.048:jes_flav_resp,DSYS=+0.004,-0.005:JVF,DSYS=+0.17,-0.072:gen_model);
+ 2.6 TO 2.9; 6.60 +- 4.36 (DSYS=0.23:bkg_model_uncorr,DSYS=0.38:fit,DSYS=0.18:lumi,DSYS=0.07:PID,DSYS=0.13:iso,DSYS=0.03:trig,DSYS=-0.1,+0.1:pileup,DSYS=-0.51,+0.51:JER,DSYS=-0.06,+0.07:jes_base1,DSYS=0.15:jes_base2,DSYS=-0.13,+0.13:jes_base3,DSYS=+0.04,-0.05:jes_base4,DSYS=-0.02,+0.02:jes_base5,DSYS=-0.03,+0.03:jes_base6,DSYS=-0.26,+0.27:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.05,+0.05:jes_pu_npv,DSYS=-0.05,+0.04:jes_pu_mu,DSYS=-0.01,+0.01:jes_pu_pt,DSYS=-0.13,+0.12:jes_pu_rho,DSYS=-0.43,+0.46:jes_flav_comp,DSYS=-0.23,+0.23:jes_flav_resp,DSYS=+0.01,-0.02:JVF,DSYS=+0.16,-0.32:gen_model);
+ 2.9 TO 3.1; 8.00 +- 8.12 (DSYS=1.12:bkg_model_uncorr,DSYS=0.56:fit,DSYS=0.22:lumi,DSYS=0.08:PID,DSYS=0.16:iso,DSYS=0.04:trig,DSYS=-0.04,+0.04:pileup,DSYS=0.4:JER,DSYS=-0.06,+0.06:jes_base1,DSYS=+0.16,-0.14:jes_base2,DSYS=-0.12,+0.14:jes_base3,DSYS=+0.05,-0.04:jes_base4,DSYS=-0.02,+0.02:jes_base5,DSYS=-0.03,+0.03:jes_base6,DSYS=-0.26,+0.28:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.04,+0.04:jes_pu_npv,DSYS=-0.04,+0.03:jes_pu_mu,DSYS=-0.01,-0.0:jes_pu_pt,DSYS=-0.12,+0.13:jes_pu_rho,DSYS=-0.43,+0.48:jes_flav_comp,DSYS=-0.22,+0.25:jes_flav_resp,DSYS=+0.01,-0.02:JVF,DSYS=+0.22,-0.43:gen_model);
+ 3.1 TO 3.14; 45.4 +- 22.9 (DSYS=2.4:bkg_model_uncorr,DSYS=2.5:fit,DSYS=1.3:lumi,DSYS=0.5:PID,DSYS=0.9:iso,DSYS=0.2:trig,DSYS=-0.1,+0.1:pileup,DSYS=9.4:JER,DSYS=-0.3,+0.3:jes_base1,DSYS=+0.8,-0.7:jes_base2,DSYS=-0.7,+0.7:jes_base3,DSYS=+0.3,-0.2:jes_base4,DSYS=-0.1,+0.1:jes_base5,DSYS=-0.1,+0.2:jes_base6,DSYS=-1.3,+1.7:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.2,+0.2:jes_pu_npv,DSYS=-0.2,+0.2:jes_pu_mu,DSYS=+0.0,+0.1:jes_pu_pt,DSYS=-0.6,+0.7:jes_pu_rho,DSYS=-2.2,+2.3:jes_flav_comp,DSYS=-1.2,+1.3:jes_flav_resp,DSYS=0.0:JVF,DSYS=+2.2,-1.4:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 8a
+*dscomment: Measured differential cross section with associated uncertainties as a function of cosine of the decay angle in the Collins-Soper frame. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DTHETA
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DCOS(THETA*) IN FB
+*xheader: COS(THETA*) 
+*data: x : y 
+ 0.0 TO 0.1; 33.0 +- 28.7 (DSYS=4.3:bkg_model_uncorr,DSYS=1.9:fit,DSYS=0.9:lumi,DSYS=0.3:PID,DSYS=0.3:iso,DSYS=0.2:trig,DSYS=0.0:pileup,DSYS=+1.7,-0.3:gen_model);
+ 0.1 TO 0.2; 44.0 +- 29.6 (DSYS=3.2:bkg_model_uncorr,DSYS=2.1:fit,DSYS=1.2:lumi,DSYS=0.4:PID,DSYS=0.4:iso,DSYS=0.2:trig,DSYS=0.0:pileup,DSYS=+2.7,-0.0:gen_model);
+ 0.2 TO 0.3; 91.9 +- 30.9 (DSYS=2.8:bkg_model_uncorr,DSYS=4.7:fit,DSYS=2.6:lumi,DSYS=0.9:PID,DSYS=0.9:iso,DSYS=0.5:trig,DSYS=0.0:pileup,DSYS=+5.3,-1.1:gen_model);
+ 0.3 TO 0.4; 44.7 +- 30.9 (DSYS=3.0:bkg_model_uncorr,DSYS=2.5:fit,DSYS=1.3:lumi,DSYS=0.4:PID,DSYS=0.4:iso,DSYS=0.2:trig,DSYS=0.0:pileup,DSYS=+2.6,-0.4:gen_model);
+ 0.4 TO 0.5; 8.4 +- 32.3 (DSYS=4.5:bkg_model_uncorr,DSYS=0.6:fit,DSYS=0.2:lumi,DSYS=0.1:PID,DSYS=0.1:iso,DSYS=0.0:trig,DSYS=0.0:pileup,DSYS=+0.2,-0.1:gen_model);
+ 0.5 TO 0.6; 69.5 +- 35.4 (DSYS=4.5:bkg_model_uncorr,DSYS=4.2:fit,DSYS=1.9:lumi,DSYS=0.7:PID,DSYS=0.7:iso,DSYS=0.3:trig,DSYS=0.0:pileup,DSYS=+0.3,-1.0:gen_model);
+ 0.6 TO 0.7; 26.1 +- 38.6 (DSYS=8.4:bkg_model_uncorr,DSYS=1.4:fit,DSYS=0.7:lumi,DSYS=0.3:PID,DSYS=0.3:iso,DSYS=0.1:trig,DSYS=0.0:pileup,DSYS=+0.1,-0.5:gen_model);
+ 0.7 TO 0.8; 91.0 +- 38.9 (DSYS=7.2:bkg_model_uncorr,DSYS=6.3:fit,DSYS=2.5:lumi,DSYS=0.9:PID,DSYS=0.9:iso,DSYS=0.5:trig,DSYS=0.0:pileup,DSYS=+1.2,-1.8:gen_model);
+ 0.8 TO 0.9; 19.5 +- 14.6 (DSYS=1.2:bkg_model_uncorr,DSYS=1.4:fit,DSYS=0.5:lumi,DSYS=0.2:PID,DSYS=0.2:iso,DSYS=0.1:trig,DSYS=0.0:pileup,DSYS=+0.2,-0.3:gen_model);
+ 0.9 TO 1.0; 17.0 +- 11.9 (DSYS=0.9:bkg_model_uncorr,DSYS=1.1:fit,DSYS=0.5:lumi,DSYS=0.2:PID,DSYS=0.2:iso,DSYS=0.1:trig,DSYS=0.0:pileup,DSYS=+0.2,-0.4:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 8a
+*dscomment: Measured differential cross section with associated uncertainties as a function of cosine of the decay angle in the Collins-Soper frame. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DTHETA
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DCOS(THETA*) IN FB
+*xheader: COS(THETA*) 
+*data: x : y 
+ 0.0 TO 0.2; 38.5 +- 29.1 (DSYS=3.7:bkg_model_uncorr,DSYS=2.0:fit,DSYS=1.1:lumi,DSYS=0.4:PID,DSYS=0.4:iso,DSYS=0.2:trig,DSYS=0.0:pileup,DSYS=+2.2,-0.2:gen_model);
+ 0.2 TO 0.4; 68.3 +- 30.9 (DSYS=2.9:bkg_model_uncorr,DSYS=3.6:fit,DSYS=1.9:lumi,DSYS=0.7:PID,DSYS=0.7:iso,DSYS=0.3:trig,DSYS=0.0:pileup,DSYS=+3.9,-0.8:gen_model);
+ 0.4 TO 0.6; 38.9 +- 33.8 (DSYS=4.5:bkg_model_uncorr,DSYS=2.4:fit,DSYS=1.1:lumi,DSYS=0.4:PID,DSYS=0.4:iso,DSYS=0.2:trig,DSYS=0.0:pileup,DSYS=+0.2,-0.6:gen_model);
+ 0.6 TO 0.8; 58.5 +- 38.8 (DSYS=7.8:bkg_model_uncorr,DSYS=3.8:fit,DSYS=1.6:lumi,DSYS=0.6:PID,DSYS=0.6:iso,DSYS=0.3:trig,DSYS=0.0:pileup,DSYS=+0.7,-1.1:gen_model);
+ 0.8 TO 1.0; 18.2 +- 13.2 (DSYS=1.0:bkg_model_uncorr,DSYS=1.3:fit,DSYS=0.5:lumi,DSYS=0.2:PID,DSYS=0.2:iso,DSYS=0.1:trig,DSYS=0.0:pileup,DSYS=+0.2,-0.4:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 8b
+*dscomment: Measured differential cross section with associated uncertainties as a function of azimuthal angle between the two leading jets. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DPHI
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DDPHI(2JET) IN FB*RAD**-1
+*xheader: DPHI(2JET) IN RAD 
+*data: x : y 
+ 0.0 TO 1.05; 1.93 +- 1.04 (DSYS=0.11:bkg_model_uncorr,DSYS=0.13:fit,DSYS=0.05:lumi,DSYS=0.02:PID,DSYS=0.04:iso,DSYS=0.01:trig,DSYS=-0.02,+0.02:pileup,DSYS=-0.05,+0.05:JER,DSYS=-0.02,+0.02:jes_base1,DSYS=+0.05,-0.04:jes_base2,DSYS=-0.04,+0.04:jes_base3,DSYS=0.01:jes_base4,DSYS=0.0:jes_base5,DSYS=-0.01,+0.01:jes_base6,DSYS=-0.07,+0.07:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.01,+0.01:jes_pu_npv,DSYS=-0.01,+0.01:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.03,+0.04:jes_pu_rho,DSYS=-0.12,+0.14:jes_flav_comp,DSYS=-0.07,+0.07:jes_flav_resp,DSYS=+0.0,-0.01:JVF,DSYS=+0.05,-0.09:gen_model);
+ 1.05 TO 2.09; 1.25 +- 1.27 (DSYS=0.11:bkg_model_uncorr,DSYS=0.1:fit,DSYS=0.04:lumi,DSYS=0.01:PID,DSYS=0.03:iso,DSYS=0.01:trig,DSYS=-0.01,+0.01:pileup,DSYS=-0.01,+0.01:JER,DSYS=-0.01,+0.01:jes_base1,DSYS=0.03:jes_base2,DSYS=-0.02,+0.02:jes_base3,DSYS=0.01:jes_base4,DSYS=0.0:jes_base5,DSYS=+0.0,+0.01:jes_base6,DSYS=-0.05,+0.05:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.01,+0.01:jes_pu_npv,DSYS=-0.01,+0.01:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.02,+0.02:jes_pu_rho,DSYS=-0.07,+0.08:jes_flav_comp,DSYS=-0.04,+0.04:jes_flav_resp,DSYS=0.0:JVF,DSYS=0.03:gen_model);
+ 2.09 TO 2.62; 2.16 +- 2.57 (DSYS=0.15:bkg_model_uncorr,DSYS=0.2:fit,DSYS=0.06:lumi,DSYS=0.02:PID,DSYS=0.04:iso,DSYS=0.01:trig,DSYS=-0.03,+0.03:pileup,DSYS=-0.02,+0.02:JER,DSYS=-0.02,+0.02:jes_base1,DSYS=+0.05,-0.04:jes_base2,DSYS=-0.04,+0.04:jes_base3,DSYS=0.01:jes_base4,DSYS=-0.01,-0.0:jes_base5,DSYS=-0.01,+0.01:jes_base6,DSYS=-0.08,+0.09:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.01,+0.01:jes_pu_npv,DSYS=-0.01,+0.01:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.04,+0.04:jes_pu_rho,DSYS=-0.12,+0.14:jes_flav_comp,DSYS=-0.07,+0.07:jes_flav_resp,DSYS=+0.0,-0.01:JVF,DSYS=0.08:gen_model);
+ 2.62 TO 3.14; 9.58 +- 3.15 (DSYS=0.21:bkg_model_uncorr,DSYS=0.71:fit,DSYS=0.27:lumi,DSYS=0.1:PID,DSYS=0.19:iso,DSYS=0.05:trig,DSYS=-0.48,+0.48:pileup,DSYS=-0.18,+0.18:JER,DSYS=-0.07,+0.08:jes_base1,DSYS=0.2:jes_base2,DSYS=-0.17,+0.17:jes_base3,DSYS=0.06:jes_base4,DSYS=-0.02,+0.03:jes_base5,DSYS=-0.04,+0.04:jes_base6,DSYS=-0.38,+0.4:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.07,+0.06:jes_pu_npv,DSYS=-0.07,+0.06:jes_pu_mu,DSYS=-0.01,+0.01:jes_pu_pt,DSYS=-0.16,+0.16:jes_pu_rho,DSYS=-0.57,+0.62:jes_flav_comp,DSYS=-0.31,+0.32:jes_flav_resp,DSYS=+0.02,-0.03:JVF,DSYS=+0.79,-0.48:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 10a
+*dscomment: Measured differential cross section with associated uncertainties as a function of diphoton thrust pT. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DPT
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DPTTHRUST(2GAMMA) IN FB*GEV**-1
+*xheader: PTTHRUST(2GAMMA) IN GEV 
+*data: x : y 
+ 0.0 TO 10.0; 0.440 +- 0.646 (DSYS=0.014:bkg_model_uncorr,DSYS=0.031:fit,DSYS=0.012:lumi,DSYS=0.004:PID,DSYS=0.004:iso,DSYS=0.002:trig,DSYS=0.0:pileup,DSYS=+0.015,-0.004:gen_model);
+ 10.0 TO 20.0; 1.597 +- 0.461 (DSYS=0.015:bkg_model_uncorr,DSYS=0.094:fit,DSYS=0.045:lumi,DSYS=0.016:PID,DSYS=0.016:iso,DSYS=0.008:trig,DSYS=0.0:pileup,DSYS=+0.052,-0.026:gen_model);
+ 20.0 TO 30.0; 0.652 +- 0.335 (DSYS=0.015:bkg_model_uncorr,DSYS=0.038:fit,DSYS=0.018:lumi,DSYS=0.007:PID,DSYS=0.007:iso,DSYS=0.003:trig,DSYS=0.0:pileup,DSYS=+0.022,-0.005:gen_model);
+ 30.0 TO 40.0; 0.569 +- 0.263 (DSYS=0.013:bkg_model_uncorr,DSYS=0.035:fit,DSYS=0.016:lumi,DSYS=0.006:PID,DSYS=0.006:iso,DSYS=0.003:trig,DSYS=0.0:pileup,DSYS=+0.018,-0.008:gen_model);
+ 40.0 TO 60.0; 0.087 +- 0.132 (DSYS=0.018:bkg_model_uncorr,DSYS=0.007:fit,DSYS=0.002:lumi,DSYS=0.001:PID,DSYS=0.001:iso,DSYS=0.0:trig,DSYS=0.0:pileup,DSYS=+0.003,-0.001:gen_model);
+ 60.0 TO 80.0; 0.3504 +- 0.0973 (DSYS=0.0104:bkg_model_uncorr,DSYS=0.0207:fit,DSYS=0.0098:lumi,DSYS=0.0035:PID,DSYS=0.0035:iso,DSYS=0.0018:trig,DSYS=0.0:pileup,DSYS=+0.0086,-0.0038:gen_model);
+ 80.0 TO 150.0; 0.0034 +- 0.0174 (DSYS=0.0021:bkg_model_uncorr,DSYS=0.00040:fit,DSYS=0.00010:lumi,DSYS=0.0:PID,DSYS=0.0:iso,DSYS=0.0:trig,DSYS=0.0:pileup,DSYS=+0.00010,-0.0:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 10b
+*dscomment: Measured differential cross section with associated uncertainties as a function of rapidity separation of the two photons. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DYRAP
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DDELTAYRAP(2GAMMA) IN FB
+*xheader: DELTAYRAP(2GAMMA) 
+*data: x : y 
+ 0.0 TO 0.3; 20.9 +- 11.7 (DSYS=1.0:bkg_model_uncorr,DSYS=1.3:fit,DSYS=0.6:lumi,DSYS=0.2:PID,DSYS=0.2:iso,DSYS=0.1:trig,DSYS=0.0:pileup,DSYS=+1.1,-0.2:gen_model);
+ 0.3 TO 0.6; 30.8 +- 12.1 (DSYS=0.7:bkg_model_uncorr,DSYS=1.8:fit,DSYS=0.9:lumi,DSYS=0.3:PID,DSYS=0.3:iso,DSYS=0.2:trig,DSYS=0.0:pileup,DSYS=+1.8,-0.2:gen_model);
+ 0.6 TO 0.9; 16.4 +- 11.8 (DSYS=0.7:bkg_model_uncorr,DSYS=0.9:fit,DSYS=0.5:lumi,DSYS=0.2:PID,DSYS=0.2:iso,DSYS=0.1:trig,DSYS=0.0:pileup,DSYS=+0.9,-0.1:gen_model);
+ 0.9 TO 1.2; 19.3 +- 12.1 (DSYS=0.9:bkg_model_uncorr,DSYS=1.3:fit,DSYS=0.5:lumi,DSYS=0.2:PID,DSYS=0.2:iso,DSYS=0.1:trig,DSYS=0.0:pileup,DSYS=+0.1,-0.3:gen_model);
+ 1.2 TO 1.5; 11.8 +- 12.2 (DSYS=1.4:bkg_model_uncorr,DSYS=0.7:fit,DSYS=0.3:lumi,DSYS=0.1:PID,DSYS=0.1:iso,DSYS=0.1:trig,DSYS=0.0:pileup,DSYS=0.1:gen_model);
+ 1.5 TO 2.0; 22.09 +- 9.65 (DSYS=2.31:bkg_model_uncorr,DSYS=1.38:fit,DSYS=0.62:lumi,DSYS=0.22:PID,DSYS=0.22:iso,DSYS=0.11:trig,DSYS=0.0:pileup,DSYS=+0.21,-0.47:gen_model);
+ 2.0 TO 2.55; 7.20 +- 4.69 (DSYS=0.54:bkg_model_uncorr,DSYS=0.99:fit,DSYS=0.2:lumi,DSYS=0.07:PID,DSYS=0.07:iso,DSYS=0.04:trig,DSYS=0.0:pileup,DSYS=+0.21,-0.11:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 11a
+*dscomment: Measured differential cross section with associated uncertainties as a function of tau of highest-tau jet (see paper for description). Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DTHRUST
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DTAUJET IN FB*GEV**-1
+*xheader: TAUJET IN GEV 
+*data: x : y 
+ 0.0 TO 8.0; 3.43 +- 1.01 (DSYS=0.07:bkg_model_uncorr,DSYS=0.22:fit,DSYS=0.1:lumi,DSYS=0.03:PID,DSYS=0.07:iso,DSYS=0.02:trig,DSYS=0.02:pileup,DSYS=0.0:JER,DSYS=0.01:jes_base1,DSYS=-0.02,+0.02:jes_base2,DSYS=0.02:jes_base3,DSYS=-0.01,+0.01:jes_base4,DSYS=0.0:jes_base5,DSYS=0.0:jes_base6,DSYS=0.02:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=0.01:jes_pu_npv,DSYS=0.0:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=0.02:jes_pu_rho,DSYS=0.07:jes_flav_comp,DSYS=0.04:jes_flav_resp,DSYS=+0.0,+0.01:JVF,DSYS=+0.03,-0.21:gen_model);
+ 8.0 TO 16.0; 0.529 +- 0.39 (DSYS=0.012:bkg_model_uncorr,DSYS=0.041:fit,DSYS=0.015:lumi,DSYS=0.005:PID,DSYS=0.011:iso,DSYS=0.003:trig,DSYS=-0.006,+0.006:pileup,DSYS=0.004:JER,DSYS=-0.002,+0.002:jes_base1,DSYS=+0.006,-0.005:jes_base2,DSYS=-0.005,+0.006:jes_base3,DSYS=0.002:jes_base4,DSYS=-0.001,+0.001:jes_base5,DSYS=-0.002,+0.002:jes_base6,DSYS=-0.006,+0.007:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.001,+0.001:jes_nonclosure,DSYS=-0.003,+0.002:jes_pu_npv,DSYS=-0.001,+0.001:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.007,+0.007:jes_pu_rho,DSYS=-0.016,+0.019:jes_flav_comp,DSYS=-0.009,+0.01:jes_flav_resp,DSYS=+0.002,-0.004:JVF,DSYS=+0.036,-0.009:gen_model);
+ 16.0 TO 30.0; 0.456 +- 0.225 (DSYS=0.025:bkg_model_uncorr,DSYS=0.031:fit,DSYS=0.013:lumi,DSYS=0.005:PID,DSYS=0.009:iso,DSYS=0.002:trig,DSYS=-0.002,+0.002:pileup,DSYS=-0.001,+0.001:JER,DSYS=-0.002,+0.002:jes_base1,DSYS=0.005:jes_base2,DSYS=-0.005,+0.005:jes_base3,DSYS=0.002:jes_base4,DSYS=-0.001,+0.001:jes_base5,DSYS=-0.001,+0.001:jes_base6,DSYS=-0.005,+0.005:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.001,+0.001:jes_nonclosure,DSYS=-0.001,+0.001:jes_pu_npv,DSYS=-0.001,+0.001:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.004,+0.004:jes_pu_rho,DSYS=-0.016,+0.016:jes_flav_comp,DSYS=-0.008,+0.009:jes_flav_resp,DSYS=+0.0,-0.001:JVF,DSYS=+0.02,-0.008:gen_model);
+ 30.0 TO 55.0; 0.0508 +- 0.0783 (DSYS=0.0071:bkg_model_uncorr,DSYS=0.0049:fit,DSYS=0.0014:lumi,DSYS=0.00050:PID,DSYS=0.001:iso,DSYS=0.00030:trig,DSYS=0.0:pileup,DSYS=-0.000200,+0.00020:JER,DSYS=-0.000300,+0.00030:jes_base1,DSYS=0.00070:jes_base2,DSYS=-0.000600,+0.00060:jes_base3,DSYS=0.00020:jes_base4,DSYS=0.0:jes_base5,DSYS=-0.000100,+0.00010:jes_base6,DSYS=-0.000800,+0.00080:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.000100,+0.00020:jes_nonclosure,DSYS=-0.000100,+0.00010:jes_pu_npv,DSYS=0.0:jes_pu_mu,DSYS=-0.000100,+0.00010:jes_pu_pt,DSYS=-0.000400,+0.00040:jes_pu_rho,DSYS=-0.0022,+0.0023:jes_flav_comp,DSYS=-0.0013,+0.0013:jes_flav_resp,DSYS=0.0:JVF,DSYS=+0.0015,-0.0011:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 11b
+*dscomment: Measured differential cross section with associated uncertainties as a function of scalar sum of tau for all jets (see paper for description). Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DTHRUST
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DSUM(TAUJET) IN FB*GEV**-1
+*xheader: SUM(TAUJET) IN GEV 
+*data: x : y 
+ 0.0 TO 8.0; 3.44 +- 1.02 (DSYS=0.07:bkg_model_uncorr,DSYS=0.22:fit,DSYS=0.1:lumi,DSYS=0.03:PID,DSYS=0.07:iso,DSYS=0.02:trig,DSYS=0.02:pileup,DSYS=0.0:JER,DSYS=0.01:jes_base1,DSYS=-0.02,+0.02:jes_base2,DSYS=0.02:jes_base3,DSYS=-0.01,+0.01:jes_base4,DSYS=0.0:jes_base5,DSYS=0.0:jes_base6,DSYS=0.02:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=0.01:jes_pu_npv,DSYS=0.0:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=0.02:jes_pu_rho,DSYS=0.07:jes_flav_comp,DSYS=0.04:jes_flav_resp,DSYS=+0.0,+0.01:JVF,DSYS=+0.03,-0.21:gen_model);
+ 8.0 TO 16.0; 0.405 +- 0.372 (DSYS=0.009:bkg_model_uncorr,DSYS=0.036:fit,DSYS=0.011:lumi,DSYS=0.004:PID,DSYS=0.008:iso,DSYS=0.002:trig,DSYS=-0.004,+0.004:pileup,DSYS=0.003:JER,DSYS=-0.001,+0.001:jes_base1,DSYS=+0.003,-0.004:jes_base2,DSYS=-0.003,+0.003:jes_base3,DSYS=0.001:jes_base4,DSYS=-0.001,+0.001:jes_base5,DSYS=-0.001,+0.001:jes_base6,DSYS=-0.004,+0.004:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.001,+0.001:jes_nonclosure,DSYS=-0.002,+0.001:jes_pu_npv,DSYS=-0.001,-0.0:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.005,+0.005:jes_pu_rho,DSYS=-0.01,+0.012:jes_flav_comp,DSYS=-0.006,+0.006:jes_flav_resp,DSYS=+0.001,-0.002:JVF,DSYS=+0.031,-0.007:gen_model);
+ 16.0 TO 30.0; 0.357 +- 0.211 (DSYS=0.011:bkg_model_uncorr,DSYS=0.024:fit,DSYS=0.01:lumi,DSYS=0.004:PID,DSYS=0.007:iso,DSYS=0.002:trig,DSYS=-0.001,+0.001:pileup,DSYS=-0.001,+0.001:JER,DSYS=-0.001,+0.001:jes_base1,DSYS=+0.004,-0.003:jes_base2,DSYS=-0.003,+0.003:jes_base3,DSYS=0.001:jes_base4,DSYS=-0.001,+0.001:jes_base5,DSYS=-0.001,-0.0:jes_base6,DSYS=-0.003,+0.004:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.001,+0.001:jes_nonclosure,DSYS=-0.001,+0.001:jes_pu_npv,DSYS=0.0:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.003,+0.003:jes_pu_rho,DSYS=-0.011,+0.012:jes_flav_comp,DSYS=-0.006,+0.006:jes_flav_resp,DSYS=+0.0,-0.001:JVF,DSYS=+0.018,-0.005:gen_model);
+ 30.0 TO 55.0; 0.1187 +- 0.0887 (DSYS=0.0039:bkg_model_uncorr,DSYS=0.009:fit,DSYS=0.0033:lumi,DSYS=0.0012:PID,DSYS=0.0024:iso,DSYS=0.00060:trig,DSYS=-0.000400,+0.00040:pileup,DSYS=-0.000500,+0.00050:JER,DSYS=-0.000700,+0.00070:jes_base1,DSYS=+0.0017,-0.0018:jes_base2,DSYS=-0.0016,+0.0016:jes_base3,DSYS=0.00060:jes_base4,DSYS=-0.000200,+0.00020:jes_base5,DSYS=-0.000300,+0.00040:jes_base6,DSYS=-0.002,+0.002:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.000300,+0.00030:jes_nonclosure,DSYS=-0.000500,+0.00040:jes_pu_npv,DSYS=-0.000200,+0.00020:jes_pu_mu,DSYS=-0.000200,+0.00010:jes_pu_pt,DSYS=-0.0013,+0.0013:jes_pu_rho,DSYS=-0.0054,+0.0056:jes_flav_comp,DSYS=-0.0031,+0.0031:jes_flav_resp,DSYS=0.00020:JVF,DSYS=+0.0031,-0.0037:gen_model);
+ 55.0 TO 150.0; 0.0417 +- 0.0157 (DSYS=0.0016:bkg_model_uncorr,DSYS=0.0023:fit,DSYS=0.0012:lumi,DSYS=0.00040:PID,DSYS=0.00080:iso,DSYS=0.00020:trig,DSYS=-0.000100,+0.00010:pileup,DSYS=-0.000500,+0.00050:JER,DSYS=-0.000400,+0.00040:jes_base1,DSYS=0.00080:jes_base2,DSYS=-0.000500,+0.00050:jes_base3,DSYS=0.00010:jes_base4,DSYS=0.0:jes_base5,DSYS=-0.000100,+0.00020:jes_base6,DSYS=-0.001,+0.001:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.000200,+0.00020:jes_nonclosure,DSYS=-0.000200,+0.00020:jes_pu_npv,DSYS=-0.000100,+0.00010:jes_pu_mu,DSYS=+0.0,+0.00010:jes_pu_pt,DSYS=-0.000500,+0.00050:jes_pu_rho,DSYS=-0.0025,+0.0028:jes_flav_comp,DSYS=-0.0014,+0.0016:jes_flav_resp,DSYS=+0.0,-0.000100:JVF,DSYS=+0.0011,-0.000800:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 12a
+*dscomment: Measured differential cross section with associated uncertainties as a function of absolute rapidity of second leading jet. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DYRAP
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DYRAP(JET2) IN FB
+*xheader: YRAP(JET2) 
+*data: x : y 
+ 0.0 TO 1.0; 3.70 +- 1.84 (DSYS=0.17:bkg_model_uncorr,DSYS=0.22:fit,DSYS=0.1:lumi,DSYS=0.04:PID,DSYS=0.04:iso,DSYS=0.02:trig,DSYS=-0.05,+0.05:pileup,DSYS=-0.06,+0.06:JER,DSYS=-0.03,+0.03:jes_base1,DSYS=0.07:jes_base2,DSYS=-0.06,+0.06:jes_base3,DSYS=0.02:jes_base4,DSYS=-0.01,+0.01:jes_base5,DSYS=-0.01,+0.02:jes_base6,DSYS=-0.06,+0.06:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.01,+0.01:jes_nonclosure,DSYS=-0.02,+0.02:jes_pu_npv,DSYS=-0.01,+0.01:jes_pu_mu,DSYS=+0.0,+0.01:jes_pu_pt,DSYS=-0.06,+0.06:jes_pu_rho,DSYS=-0.22,+0.25:jes_flav_comp,DSYS=-0.13,+0.13:jes_flav_resp,DSYS=0.01:JVF,DSYS=+0.09,-0.15:gen_model);
+ 1.0 TO 2.0; 2.48 +- 1.57 (DSYS=0.12:bkg_model_uncorr,DSYS=0.14:fit,DSYS=0.07:lumi,DSYS=0.02:PID,DSYS=0.02:iso,DSYS=0.01:trig,DSYS=-0.03,+0.03:pileup,DSYS=-0.03,+0.03:JER,DSYS=-0.02,+0.02:jes_base1,DSYS=0.05:jes_base2,DSYS=-0.04,+0.04:jes_base3,DSYS=+0.01,-0.02:jes_base4,DSYS=-0.01,-0.0:jes_base5,DSYS=-0.01,+0.01:jes_base6,DSYS=-0.09,+0.1:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.02,+0.02:jes_nonclosure,DSYS=-0.01,+0.01:jes_pu_npv,DSYS=-0.01,-0.0:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.04,+0.04:jes_pu_rho,DSYS=-0.16,+0.18:jes_flav_comp,DSYS=-0.08,+0.09:jes_flav_resp,DSYS=0.01:JVF,DSYS=+0.08,-0.04:gen_model);
+ 2.0 TO 3.0; 1.86 +- 1.16 (DSYS=0.06:bkg_model_uncorr,DSYS=0.11:fit,DSYS=0.05:lumi,DSYS=0.02:PID,DSYS=0.02:iso,DSYS=0.01:trig,DSYS=-0.04,+0.04:pileup,DSYS=-0.02,+0.02:JER,DSYS=-0.02,+0.02:jes_base1,DSYS=0.04:jes_base2,DSYS=-0.03,+0.03:jes_base3,DSYS=0.01:jes_base4,DSYS=0.0:jes_base5,DSYS=-0.01,+0.01:jes_base6,DSYS=-0.08,+0.08:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.01,+0.01:jes_nonclosure,DSYS=-0.01,+0.01:jes_pu_npv,DSYS=-0.02,+0.02:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.03,+0.03:jes_pu_rho,DSYS=-0.1,+0.11:jes_flav_comp,DSYS=-0.05,+0.06:jes_flav_resp,DSYS=0.0:JVF,DSYS=+0.05,-0.09:gen_model);
+ 3.0 TO 4.4; 0.988 +- 0.502 (DSYS=0.015:bkg_model_uncorr,DSYS=0.064:fit,DSYS=0.028:lumi,DSYS=0.01:PID,DSYS=0.01:iso,DSYS=0.005:trig,DSYS=-0.032,+0.032:pileup,DSYS=-0.036,+0.036:JER,DSYS=-0.009,+0.011:jes_base1,DSYS=+0.027,-0.025:jes_base2,DSYS=-0.021,+0.023:jes_base3,DSYS=+0.009,-0.007:jes_base4,DSYS=-0.003,+0.003:jes_base5,DSYS=-0.004,+0.005:jes_base6,DSYS=-0.084,+0.097:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.001,+0.001:jes_nonclosure,DSYS=-0.008,+0.008:jes_pu_npv,DSYS=-0.016,+0.016:jes_pu_mu,DSYS=-0.001,+0.001:jes_pu_pt,DSYS=-0.019,+0.02:jes_pu_rho,DSYS=-0.057,+0.061:jes_flav_comp,DSYS=-0.027,+0.03:jes_flav_resp,DSYS=+0.0,-0.001:JVF,DSYS=+0.034,-0.053:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 12b
+*dscomment: Measured differential cross section with associated uncertainties as a function of transverse momentum of third leading jet. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DPT
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DPT(JET3) IN FB*GEV**-1
+*xheader: PT(JET3) IN GEV 
+*data: x : y 
+ 0.0 TO 30.0; 0.1704 +- 0.0801 (DSYS=0.0153:bkg_model_uncorr,DSYS=0.0096:fit,DSYS=0.0048:lumi,DSYS=0.0017:PID,DSYS=0.0068:iso,DSYS=0.00090:trig,DSYS=-0.0022,+0.0022:pileup,DSYS=-0.0015,+0.0015:JER,DSYS=-0.0011,+0.0013:jes_base1,DSYS=+0.003,-0.0028:jes_base2,DSYS=-0.0024,+0.0026:jes_base3,DSYS=0.00090:jes_base4,DSYS=-0.000400,+0.00030:jes_base5,DSYS=-0.000500,+0.00060:jes_base6,DSYS=-0.0055,+0.0059:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.000600,+0.00050:jes_nonclosure,DSYS=-0.000800,+0.00080:jes_pu_npv,DSYS=-0.000900,+0.00080:jes_pu_mu,DSYS=-0.000200,+0.00010:jes_pu_pt,DSYS=-0.0023,+0.0024:jes_pu_rho,DSYS=-0.0083,+0.0089:jes_flav_comp,DSYS=-0.0043,+0.0047:jes_flav_resp,DSYS=0.00030:JVF,DSYS=+0.0042,-0.0058:gen_model);
+ 30.0 TO 50.0; 0.0883 +- 0.0528 (DSYS=0.007:bkg_model_uncorr,DSYS=0.0044:fit,DSYS=0.0025:lumi,DSYS=0.00090:PID,DSYS=0.0035:iso,DSYS=0.00040:trig,DSYS=-0.0034,+0.0034:pileup,DSYS=-0.0036,+0.0036:JER,DSYS=-0.001,+0.0011:jes_base1,DSYS=+0.003,-0.0027:jes_base2,DSYS=-0.0024,+0.0026:jes_base3,DSYS=+0.00090,-0.000800:jes_base4,DSYS=-0.000400,+0.00040:jes_base5,DSYS=-0.000500,+0.00060:jes_base6,DSYS=-0.005,+0.0055:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.000500,+0.00050:jes_nonclosure,DSYS=-0.000900,+0.001:jes_pu_npv,DSYS=-0.001,+0.00090:jes_pu_mu,DSYS=+0.0,+0.00010:jes_pu_pt,DSYS=-0.0025,+0.0026:jes_pu_rho,DSYS=-0.008,+0.0094:jes_flav_comp,DSYS=-0.0043,+0.0048:jes_flav_resp,DSYS=+0.00030,-0.000500:JVF,DSYS=+0.0046,-0.0039:gen_model);
+ 50.0 TO 150.0; 0.01350 +- 0.00669 (DSYS=0.00063:bkg_model_uncorr,DSYS=0.00068:fit,DSYS=0.00038:lumi,DSYS=0.00014:PID,DSYS=0.00054:iso,DSYS=0.000070:trig,DSYS=-0.000240,+0.00024:pileup,DSYS=-0.000190,+0.00019:JER,DSYS=-0.000170,+0.00017:jes_base1,DSYS=+0.00038,-0.000410:jes_base2,DSYS=-0.000320,+0.00031:jes_base3,DSYS=+0.00010,-0.000110:jes_base4,DSYS=-0.0000200,+0.000020:jes_base5,DSYS=-0.0000600,+0.000060:jes_base6,DSYS=-0.000620,+0.00062:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.0000900,+0.000080:jes_nonclosure,DSYS=-0.0000800,+0.000060:jes_pu_npv,DSYS=-0.0000500,+0.000050:jes_pu_mu,DSYS=-0.0000300,+0.000030:jes_pu_pt,DSYS=-0.000220,+0.00021:jes_pu_rho,DSYS=-0.00118,+0.00128:jes_flav_comp,DSYS=-0.000640,+0.00064:jes_flav_resp,DSYS=0.0:JVF,DSYS=+0.00052,-0.000680:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 12c
+*dscomment: Measured differential cross section with associated uncertainties as a function of dijet invariant mass. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DM
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DM(2JET) IN FB*GEV**-1
+*xheader: M(2JET) IN GEV 
+*data: x : y 
+ 0.0 TO 200.0; 0.0155 +- 0.0109 (DSYS=0.00090:bkg_model_uncorr,DSYS=0.0013:fit,DSYS=0.00040:lumi,DSYS=0.00020:PID,DSYS=0.00030:iso,DSYS=0.00010:trig,DSYS=-0.000400,+0.00040:pileup,DSYS=-0.000300,+0.00030:JER,DSYS=-0.000100,+0.00010:jes_base1,DSYS=0.00030:jes_base2,DSYS=-0.000300,+0.00030:jes_base3,DSYS=0.00010:jes_base4,DSYS=0.0:jes_base5,DSYS=-0.000100,+0.00010:jes_base6,DSYS=-0.000400,+0.00050:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.000100,+0.00010:jes_pu_npv,DSYS=-0.000100,+0.00010:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.000300,+0.00030:jes_pu_rho,DSYS=-0.001,+0.0011:jes_flav_comp,DSYS=-0.000500,+0.00060:jes_flav_resp,DSYS=+0.0,-0.000100:JVF,DSYS=+0.00050,-0.000600:gen_model);
+ 200.0 TO 400.0; 0.02160 +- 0.00709 (DSYS=0.00097:bkg_model_uncorr,DSYS=0.00128:fit,DSYS=0.00060:lumi,DSYS=0.00022:PID,DSYS=0.00043:iso,DSYS=0.00011:trig,DSYS=-0.000370,+0.00037:pileup,DSYS=-0.000300,+0.00030:JER,DSYS=-0.000200,+0.00018:jes_base1,DSYS=+0.00041,-0.000450:jes_base2,DSYS=-0.000390,+0.00036:jes_base3,DSYS=+0.00011,-0.000130:jes_base4,DSYS=-0.0000400,+0.000040:jes_base5,DSYS=-0.0000900,+0.000080:jes_base6,DSYS=-0.000780,+0.00074:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.000130,+0.000090:jes_pu_npv,DSYS=-0.000160,+0.00011:jes_pu_mu,DSYS=-0.0000300,+0.000010:jes_pu_pt,DSYS=-0.000350,+0.00032:jes_pu_rho,DSYS=-0.00122,+0.00125:jes_flav_comp,DSYS=-0.000680,+0.00064:jes_flav_resp,DSYS=+0.000020,-0.0000400:JVF,DSYS=+0.00055,-0.000600:gen_model);
+ 400.0 TO 650.0; 0.00630 +- 0.00293 (DSYS=0.00031:bkg_model_uncorr,DSYS=0.00038:fit,DSYS=0.00018:lumi,DSYS=0.000060:PID,DSYS=0.00013:iso,DSYS=0.000030:trig,DSYS=-0.0000800,+0.000080:pileup,DSYS=0.0:JER,DSYS=-0.0000500,+0.000050:jes_base1,DSYS=+0.00013,-0.000120:jes_base2,DSYS=-0.0000900,+0.00010:jes_base3,DSYS=0.000030:jes_base4,DSYS=-0.0000100,+0.000010:jes_base5,DSYS=-0.0000200,+0.000020:jes_base6,DSYS=-0.000280,+0.00032:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=-0.0000400,+0.000040:jes_pu_npv,DSYS=-0.0000600,+0.000050:jes_pu_mu,DSYS=+0.0,+0.000010:jes_pu_pt,DSYS=-0.0000800,+0.000080:jes_pu_rho,DSYS=-0.000300,+0.00035:jes_flav_comp,DSYS=-0.000160,+0.00019:jes_flav_resp,DSYS=0.000010:JVF,DSYS=+0.00013,-0.000180:gen_model);
+ 650.0 TO 1000.0; 0.00140 +- 0.00109 (DSYS=0.000080:bkg_model_uncorr,DSYS=0.00011:fit,DSYS=0.000040:lumi,DSYS=0.000010:PID,DSYS=0.000030:iso,DSYS=0.000010:trig,DSYS=-0.0000200,+0.000020:pileup,DSYS=0.000010:JER,DSYS=-0.0000100,+0.000010:jes_base1,DSYS=+0.000030,-0.0000200:jes_base2,DSYS=-0.0000200,+0.000020:jes_base3,DSYS=+0.000010,-0.0:jes_base4,DSYS=0.0:jes_base5,DSYS=+0.0,+0.000010:jes_base6,DSYS=-0.0000800,+0.000090:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=+0.0,+0.000010:jes_pu_npv,DSYS=-0.0000100,+0.000010:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.0000200,+0.000020:jes_pu_rho,DSYS=-0.0000700,+0.000080:jes_flav_comp,DSYS=-0.0000300,+0.000040:jes_flav_resp,DSYS=0.0:JVF,DSYS=+0.000040,-0.0000600:gen_model);
+*dataend:
+
+*dataset:
+*location: Fig. 12d
+*dscomment: Measured differential cross section with associated uncertainties as a function of transverse momentum of the combined diphoton and dijet system. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DPT
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DPT(2GAMMA2JET) IN FB*GEV**-1
+*xheader: PT(2GAMMA2JET) IN GEV 
+*data: x : y 
+ 0.0 TO 30.0; 0.1325 +- 0.0708 (DSYS=0.0046:bkg_model_uncorr,DSYS=0.0083:fit,DSYS=0.0037:lumi,DSYS=0.0013:PID,DSYS=0.0027:iso,DSYS=0.00070:trig,DSYS=-0.0017,+0.0017:pileup,DSYS=0.0302:JER,DSYS=-0.0012,+0.0014:jes_base1,DSYS=+0.0034,-0.0031:jes_base2,DSYS=-0.0028,+0.0029:jes_base3,DSYS=0.001:jes_base4,DSYS=-0.000300,+0.00040:jes_base5,DSYS=-0.000600,+0.00070:jes_base6,DSYS=-0.0054,+0.0067:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.000600,+0.00070:jes_nonclosure,DSYS=-0.000900,+0.00090:jes_pu_npv,DSYS=-0.000900,+0.00080:jes_pu_mu,DSYS=-0.000100,+0.00010:jes_pu_pt,DSYS=-0.0026,+0.0027:jes_pu_rho,DSYS=-0.0087,+0.0109:jes_flav_comp,DSYS=-0.0047,+0.0056:jes_flav_resp,DSYS=+0.00020,-0.000300:JVF,DSYS=+0.0037,-0.0058:gen_model);
+ 30.0 TO 55.0; 0.0634 +- 0.0561 (DSYS=0.0064:bkg_model_uncorr,DSYS=0.0041:fit,DSYS=0.0018:lumi,DSYS=0.00060:PID,DSYS=0.0013:iso,DSYS=0.00030:trig,DSYS=-0.0016,+0.0016:pileup,DSYS=-0.0088,+0.0088:JER,DSYS=-0.000500,+0.00060:jes_base1,DSYS=0.0013:jes_base2,DSYS=-0.0011,+0.0011:jes_base3,DSYS=0.00040:jes_base4,DSYS=-0.000200,+0.00020:jes_base5,DSYS=-0.000300,+0.00020:jes_base6,DSYS=-0.0027,+0.0023:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.000200,+0.00020:jes_nonclosure,DSYS=-0.000500,+0.00040:jes_pu_npv,DSYS=-0.000500,+0.00030:jes_pu_mu,DSYS=-0.000100,+0.00010:jes_pu_pt,DSYS=-0.0011,+0.0011:jes_pu_rho,DSYS=-0.0043,+0.0039:jes_flav_comp,DSYS=-0.0022,+0.0021:jes_flav_resp,DSYS=+0.00010,-0.000200:JVF,DSYS=+0.0014,-0.0031:gen_model);
+ 55.0 TO 80.0; 0.1050 +- 0.033 (DSYS=0.0031:bkg_model_uncorr,DSYS=0.0086:fit,DSYS=0.0029:lumi,DSYS=0.001:PID,DSYS=0.0021:iso,DSYS=0.00050:trig,DSYS=-0.0032,+0.0032:pileup,DSYS=-0.0247,+0.0247:JER,DSYS=-0.000400,+0.00070:jes_base1,DSYS=0.0015:jes_base2,DSYS=-0.0011,+0.0014:jes_base3,DSYS=+0.00050,-0.000400:jes_base4,DSYS=-0.000100,+0.00010:jes_base5,DSYS=-0.000100,+0.00030:jes_base6,DSYS=-0.003,+0.003:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.000300,+0.00010:jes_nonclosure,DSYS=-0.000300,+0.00050:jes_pu_npv,DSYS=-0.000500,+0.00080:jes_pu_mu,DSYS=+0.00010,+0.00010:jes_pu_pt,DSYS=-0.001,+0.0012:jes_pu_rho,DSYS=-0.0037,+0.0043:jes_flav_comp,DSYS=-0.0019,+0.0019:jes_flav_resp,DSYS=0.00030:JVF,DSYS=+0.0081,-0.0075:gen_model);
+ 80.0 TO 140.0; 0.00800 +- 0.00852 (DSYS=0.00083:bkg_model_uncorr,DSYS=0.00057:fit,DSYS=0.00022:lumi,DSYS=0.000080:PID,DSYS=0.00016:iso,DSYS=0.000040:trig,DSYS=-0.000160,+0.00016:pileup,DSYS=-0.00259,+0.00259:JER,DSYS=-0.0000300,+0.000010:jes_base1,DSYS=+0.000040,-0.0000500:jes_base2,DSYS=-0.0000400,+0.000040:jes_base3,DSYS=+0.0,-0.0000100:jes_base4,DSYS=-0.0000100,-0.0000100:jes_base5,DSYS=-0.0000200,-0.0:jes_base6,DSYS=-0.000130,+0.000070:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.0000100,-0.0:jes_nonclosure,DSYS=-0.0000400,+0.000010:jes_pu_npv,DSYS=-0.0000400,+0.000010:jes_pu_mu,DSYS=-0.0000100,-0.0000100:jes_pu_pt,DSYS=-0.0000500,+0.000020:jes_pu_rho,DSYS=-0.000160,+0.000030:jes_flav_comp,DSYS=-0.0000800,+0.000030:jes_flav_resp,DSYS=0.000010:JVF,DSYS=+0.00080,-0.000420:gen_model);
+*dataend:
+
+*dataset:
+*location: Aux. Fig. 1a
+*dscomment: Measured differential cross section with associated uncertainties as a function of cosine of the decay angle in the Collins-Soper frame in bins of diphoton transverse momentum. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DTHETA
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(2GAM) IN GEV : < 80 : 80.0 TO 200.0 : > 200
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DCOS(THETA*) IN FB
+*xheader: COS(THETA*) 
+*data: x : y : y : y 
+ 0.0 TO 0.25; 30.7 +- 17.9 (DSYS=1.4:bkg_model_uncorr,DSYS=1.7:fit,DSYS=0.9:lumi,DSYS=0.3:PID,DSYS=0.3:iso,DSYS=0.2:trig,DSYS=0.0:pileup,DSYS=+1.7,-0.3:gen_model); 4.64 +- 4.94 (DSYS=2.25:bkg_model_uncorr,DSYS=0.28:fit,DSYS=0.13:lumi,DSYS=0.05:PID,DSYS=0.05:iso,DSYS=0.02:trig,DSYS=0.0:pileup,DSYS=+0.28,-0.04:gen_model); - ;
+ 0.25 TO 0.5; 41.1 +- 19.6 (DSYS=2.4:bkg_model_uncorr,DSYS=2.4:fit,DSYS=1.2:lumi,DSYS=0.4:PID,DSYS=0.4:iso,DSYS=0.2:trig,DSYS=0.0:pileup,DSYS=+1.7,-0.4:gen_model); 7.28 +- 4.31 (DSYS=0.63:bkg_model_uncorr,DSYS=0.4:fit,DSYS=0.2:lumi,DSYS=0.07:PID,DSYS=0.07:iso,DSYS=0.04:trig,DSYS=0.0:pileup,DSYS=+0.38,-0.09:gen_model); - ;
+ 0.5 TO 0.75; 61.2 +- 23.9 (DSYS=0.3:bkg_model_uncorr,DSYS=3.5:fit,DSYS=1.7:lumi,DSYS=0.6:PID,DSYS=0.6:iso,DSYS=0.3:trig,DSYS=0.0:pileup,DSYS=+0.3,-1.0:gen_model); 0.23 +- 3.65 (DSYS=0.35:bkg_model_uncorr,DSYS=0.09:fit,DSYS=0.01:lumi,DSYS=0.0:PID,DSYS=0.0:iso,DSYS=0.0:trig,DSYS=0.0:pileup,DSYS=0.0:gen_model); - ;
+ 0.75 TO 1.0; 20.7 +- 12.1 (DSYS=0.5:bkg_model_uncorr,DSYS=1.3:fit,DSYS=0.6:lumi,DSYS=0.2:PID,DSYS=0.2:iso,DSYS=0.1:trig,DSYS=0.0:pileup,DSYS=+0.5,-0.4:gen_model); 7.93 +- 5.02 (DSYS=0.86:bkg_model_uncorr,DSYS=0.45:fit,DSYS=0.22:lumi,DSYS=0.08:PID,DSYS=0.08:iso,DSYS=0.04:trig,DSYS=0.0:pileup,DSYS=+0.15,-0.07:gen_model); - ;
+ 0.0 TO 1.0; - ; - ; 0.465 +- 0.391 (DSYS=0.0:bkg_model_uncorr,DSYS=0.039:fit,DSYS=0.013:lumi,DSYS=0.005:PID,DSYS=0.005:iso,DSYS=0.002:trig,DSYS=0.0:pileup,DSYS=+0.014,-0.007:gen_model);
+*dataend:
+
+*dataset:
+*location: Aux. Fig. 1b
+*dscomment: Measured differential cross section with associated uncertainties as a function of diphoton transverse momentum in jet multiplicity bins. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DPT
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: MULT(JET,PT>30 GEV) : 0.0 : 1.0 : >=2
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DPT(2GAMMA) IN FB*GEV**-1
+*xheader: PT(2GAMMA) IN GEV 
+*data: x : y : y : y 
+ 0.0 TO 50.0; 0.401 +- 0.158 (DSYS=0.012:bkg_model_uncorr,DSYS=0.025:fit,DSYS=0.011:lumi,DSYS=0.004:PID,DSYS=0.004:iso,DSYS=0.002:trig,DSYS=0.0:pileup,DSYS=+0.014,-0.003:gen_model,DSYS=0.009:JER,DSYS=0.001:jes_base1,DSYS=-0.003,+0.003:jes_base2,DSYS=0.003:jes_base3,DSYS=-0.001,+0.001:jes_base4,DSYS=0.0:jes_base5,DSYS=0.001:jes_base6,DSYS=0.006:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.001:jes_nonclosure,DSYS=0.001:jes_pu_npv,DSYS=0.001:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=+0.003,-0.002:jes_pu_rho,DSYS=0.009:jes_flav_comp,DSYS=0.005:jes_flav_resp,DSYS=0.0:JVF); 0.1036 +- 0.0608 (DSYS=0.0033:bkg_model_uncorr,DSYS=0.0069:fit,DSYS=0.0029:lumi,DSYS=0.001:PID,DSYS=0.001:iso,DSYS=0.00050:trig,DSYS=0.0:pileup,DSYS=+0.0082,-0.0049:gen_model,DSYS=-0.0067,+0.0067:JER,DSYS=-0.001,+0.001:jes_base1,DSYS=+0.0024,-0.0023:jes_base2,DSYS=-0.0021,+0.0021:jes_base3,DSYS=0.00070:jes_base4,DSYS=-0.000200,+0.00030:jes_base5,DSYS=-0.000400,+0.00050:jes_base6,DSYS=-0.0043,+0.0046:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.000400,+0.00040:jes_nonclosure,DSYS=-0.000700,+0.00070:jes_pu_npv,DSYS=-0.000700,+0.00070:jes_pu_mu,DSYS=-0.000100,+0.00010:jes_pu_pt,DSYS=-0.0019,+0.002:jes_pu_rho,DSYS=-0.0066,+0.0077:jes_flav_comp,DSYS=-0.0036,+0.0038:jes_flav_resp,DSYS=+0.00020,-0.000300:JVF); 0.0457 +- 0.0311 (DSYS=0.0018:bkg_model_uncorr,DSYS=0.003:fit,DSYS=0.0013:lumi,DSYS=0.00050:PID,DSYS=0.00050:iso,DSYS=0.00020:trig,DSYS=0.0:pileup,DSYS=+0.0061,-0.0034:gen_model,DSYS=-0.0034,+0.0034:JER,DSYS=-0.000700,+0.00070:jes_base1,DSYS=0.0017:jes_base2,DSYS=-0.0015,+0.0015:jes_base3,DSYS=0.00050:jes_base4,DSYS=-0.000200,+0.00020:jes_base5,DSYS=-0.000300,+0.00030:jes_base6,DSYS=-0.0033,+0.0036:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.000400,+0.00030:jes_nonclosure,DSYS=-0.000500,+0.00050:jes_pu_npv,DSYS=-0.000700,+0.00050:jes_pu_mu,DSYS=-0.000100,+0.00010:jes_pu_pt,DSYS=-0.0014,+0.0014:jes_pu_rho,DSYS=-0.0049,+0.0054:jes_flav_comp,DSYS=-0.0026,+0.0028:jes_flav_resp,DSYS=0.00020:JVF);
+ 50.0 TO 200.0; 0.01280 +- 0.00777 (DSYS=0.00091:bkg_model_uncorr,DSYS=0.00070:fit,DSYS=0.00036:lumi,DSYS=0.00013:PID,DSYS=0.00013:iso,DSYS=0.000060:trig,DSYS=0.0:pileup,DSYS=+0.00061,-0.000120:gen_model,DSYS=-0.00143,+0.00143:JER,DSYS=+0.00018,-0.000170:jes_base1,DSYS=-0.000440,+0.00042:jes_base2,DSYS=+0.00037,-0.000380:jes_base3,DSYS=-0.000130,+0.00014:jes_base4,DSYS=+0.000050,-0.0000600:jes_base5,DSYS=+0.000080,-0.0000900:jes_base6,DSYS=+0.00079,-0.000730:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=+0.000080,-0.000110:jes_nonclosure,DSYS=0.00012:jes_pu_npv,DSYS=+0.00012,-0.000130:jes_pu_mu,DSYS=0.000010:jes_pu_pt,DSYS=0.00036:jes_pu_rho,DSYS=+0.0014,-0.0013:jes_flav_comp,DSYS=+0.00073,-0.000680:jes_flav_resp,DSYS=-0.0000300,+0.000050:JVF); - ; - ;
+ 50.0 TO 100.0; - ; 0.0982 +- 0.0622 (DSYS=0.002:bkg_model_uncorr,DSYS=0.0068:fit,DSYS=0.0027:lumi,DSYS=0.001:PID,DSYS=0.001:iso,DSYS=0.00050:trig,DSYS=0.0:pileup,DSYS=+0.0033,-0.000700:gen_model,DSYS=0.0034:JER,DSYS=0.00020:jes_base1,DSYS=-0.000500,+0.00050:jes_base2,DSYS=0.00040:jes_base3,DSYS=-0.000200,+0.00010:jes_base4,DSYS=+0.00010,-0.0:jes_base5,DSYS=0.00010:jes_base6,DSYS=+0.0011,-0.001:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.00010:jes_nonclosure,DSYS=+0.00020,-0.000100:jes_pu_npv,DSYS=+0.00020,-0.000100:jes_pu_mu,DSYS=+0.00010,-0.0:jes_pu_pt,DSYS=0.00040:jes_pu_rho,DSYS=+0.0017,-0.0013:jes_flav_comp,DSYS=+0.00080,-0.000700:jes_flav_resp,DSYS=-0.000100,+0.00010:JVF); 0.0879 +- 0.0338 (DSYS=0.0051:bkg_model_uncorr,DSYS=0.0048:fit,DSYS=0.0025:lumi,DSYS=0.00090:PID,DSYS=0.00090:iso,DSYS=0.00040:trig,DSYS=0.0:pileup,DSYS=+0.0029,-0.0036:gen_model,DSYS=-0.001,+0.001:JER,DSYS=-0.000900,+0.001:jes_base1,DSYS=+0.0023,-0.0022:jes_base2,DSYS=-0.0019,+0.002:jes_base3,DSYS=0.00070:jes_base4,DSYS=-0.000300,+0.00020:jes_base5,DSYS=-0.000400,+0.00040:jes_base6,DSYS=-0.004,+0.0044:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=-0.000400,+0.00040:jes_nonclosure,DSYS=-0.000700,+0.00060:jes_pu_npv,DSYS=-0.000700,+0.00060:jes_pu_mu,DSYS=-0.000100,+0.00010:jes_pu_pt,DSYS=-0.0018,+0.0019:jes_pu_rho,DSYS=-0.0063,+0.0073:jes_flav_comp,DSYS=-0.0034,+0.0037:jes_flav_resp,DSYS=+0.00020,-0.000300:JVF);
+ 100.0 TO 200.0; - ; 0.0073 +- 0.0111 (DSYS=0.0013:bkg_model_uncorr,DSYS=0.00060:fit,DSYS=0.00020:lumi,DSYS=0.00010:PID,DSYS=0.00010:iso,DSYS=0.0:trig,DSYS=0.0:pileup,DSYS=+0.00020,-0.000100:gen_model,DSYS=-0.000100,+0.00010:JER,DSYS=+0.0,-0.000100:jes_base1,DSYS=-0.000100,+0.00010:jes_base2,DSYS=0.00010:jes_base3,DSYS=0.0:jes_base4,DSYS=0.0:jes_base5,DSYS=0.0:jes_base6,DSYS=0.00020:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=0.0:jes_pu_npv,DSYS=0.0:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=0.00010:jes_pu_rho,DSYS=0.00030:jes_flav_comp,DSYS=0.00020:jes_flav_resp,DSYS=0.0:JVF); 0.0108 +- 0.0107 (DSYS=0.0011:bkg_model_uncorr,DSYS=0.00070:fit,DSYS=0.00030:lumi,DSYS=0.00010:PID,DSYS=0.00010:iso,DSYS=0.00010:trig,DSYS=0.0:pileup,DSYS=0.00030:gen_model,DSYS=0.00010:JER,DSYS=0.0:jes_base1,DSYS=0.00010:jes_base2,DSYS=-0.000100,+0.00010:jes_base3,DSYS=0.0:jes_base4,DSYS=0.0:jes_base5,DSYS=0.0:jes_base6,DSYS=-0.000200,+0.00020:jes_fwd_model,DSYS=0.0:jes_highpt,DSYS=0.0:jes_nonclosure,DSYS=0.0:jes_pu_npv,DSYS=0.0:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.000100,+0.00010:jes_pu_rho,DSYS=-0.000300,+0.00040:jes_flav_comp,DSYS=-0.000200,+0.00020:jes_flav_resp,DSYS=0.0:JVF);
+*dataend:
+
+*dataset:
+*location: Aux. Fig. 1c
+*dscomment: Measured differential cross section with associated uncertainties as a function of leading jet transverse momentum for exclusive one-jet events. Each systematic uncertainty sources is fully uncorrelated with the other sources and fully correlated across bins, except for the background modelling systematics for which an uncorrelated treatment across bins is more appropriate
+*reackey: P P --> HIGGS X
+*obskey: DSIG/DPT
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: D(SIG)/DPT(JET1) IN FB*GEV**-1
+*xheader: PT(JET1) IN GEV 
+*data: x : y 
+ 30.0 TO 50.0; 0.358 +- 0.172 (DSYS=0.006:bkg_model_uncorr,DSYS=0.02:fit,DSYS=0.01:lumi,DSYS=0.004:PID,DSYS=0.004:iso,DSYS=0.002:trig,DSYS=0.0:pileup,DSYS=-0.007,+0.007:JER,DSYS=0.001:JVF,DSYS=-0.001,+0.001:jes_base1,DSYS=0.002:jes_base2,DSYS=-0.002,+0.002:jes_base3,DSYS=0.001:jes_base4,DSYS=-0.001,+0.001:jes_base5,DSYS=-0.001,+0.001:jes_base6,DSYS=-0.005,+0.005:jes_fwd_model,DSYS=-0.001,+0.001:jes_pu_npv,DSYS=-0.001,+0.001:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=-0.003,+0.003:jes_pu_rho,DSYS=-0.006,+0.007:jes_flav_comp,DSYS=-0.003,+0.003:jes_flav_resp,DSYS=+0.027,-0.006:gen_model);
+ 50.0 TO 140.0; 0.0307 +- 0.0322 (DSYS=0.0013:bkg_model_uncorr,DSYS=0.0023:fit,DSYS=0.00090:lumi,DSYS=0.00030:PID,DSYS=0.00030:iso,DSYS=0.00020:trig,DSYS=0.0:pileup,DSYS=-0.000200,+0.00020:JER,DSYS=0.0:JVF,DSYS=-0.000100,-0.0:jes_base1,DSYS=0.00020:jes_base2,DSYS=-0.000200,+0.00020:jes_base3,DSYS=0.0:jes_base4,DSYS=0.0:jes_base5,DSYS=0.0:jes_base6,DSYS=-0.000200,+0.00020:jes_fwd_model,DSYS=0.0:jes_pu_npv,DSYS=0.0:jes_pu_mu,DSYS=0.0:jes_pu_pt,DSYS=0.0:jes_pu_rho,DSYS=-0.000500,+0.00050:jes_flav_comp,DSYS=-0.000300,+0.00030:jes_flav_resp,DSYS=+0.0011,-0.000500:gen_model);
+*dataend:
+
+*dataset:
+*location: Tab. 7
+*dscomment: Diphoton kinematic acceptances in percent for gluon fusion for each fiducial region/variable bin studied in this paper, defined as the probability to fulfil the diphoton kinematic criteria: pT(2gam) < 0.35 (0.25) for the leading (subleading) photon and |eta(gam)|<2.37. The factors are evaluated using the POWHEG event generator with MPI modelling and hadronisation turned off. Consistent results for the diphoton variables are obtained by HRes 2.2. Uncertainties are taken from PDF variations. QCD scale varaitions have a negligible impact on these factors
+*reackey: P P --> HIGGS X
+*obskey: EFFICIENCY
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: BIN INDEX : 1.0 : 2.0 : 3.0 : 4.0 : 5.0 : 6.0 : 7.0 : 8.0
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: KINEMATIC ACCEPTANCE IN PCT
+*xheader: VARIABLE / REGION 
+*data: x : y : y : y : y : y : y : y : y 
+ DIPHOTON BASELINE; 62.6 +- 0.9; - ; - ; - ; - ; - ; - ; - ;
+ MULT(JET) >= 1; 61.1 +- 0.7; - ; - ; - ; - ; - ; - ; - ;
+ MULT(JET) >= 2; 61.9 +- 0.6; - ; - ; - ; - ; - ; - ; - ;
+ MULT(JET) >= 3; 63.8 +- 0.6; - ; - ; - ; - ; - ; - ; - ;
+ VBF ENHANCED; 55.0 +- 0.5; - ; - ; - ; - ; - ; - ; - ;
+ PT(JET3); 61.2 +- 0.6; 62.2 +- 0.6; 68.9 +- 0.6; - ; - ; - ; - ; - ;
+ MULT(JET,PT>30 GEV); 63.6 +- 1.0; 60.8 +- 0.7; 61.2 +- 0.6; 63.8 +- 0.6; - ; - ; - ; - ;
+ MULT(JET,PT>50 GEV); 62.9 +- 0.9; 60.7 +- 0.6; 64.3 +- 0.6; 67.8 +- 0.6; - ; - ; - ; - ;
+ YRAP(JET1); 61.5 +- 0.6; 61.5 +- 0.7; 60.2 +- 0.7; 60.1 +- 0.7; - ; - ; - ; - ;
+ YRAP(JET2); 61.1 +- 0.5; 61.6 +- 0.6; 63.1 +- 0.6; 63.4 +- 0.6; - ; - ; - ; - ;
+ PT(JET2); 60.8 +- 0.7; 60.1 +- 0.6; 62.9 +- 0.6; 67.5 +- 0.6; - ; - ; - ; - ;
+ M(2JET); 61.0 +- 0.6; 62.7 +- 0.6; 64.2 +- 0.6; 62.6 +- 0.6; - ; - ; - ; - ;
+ DELTAYRAP(2JET); 62.1 +- 0.6; 62.0 +- 0.6; 60.1 +- 0.6; 60.9 +- 0.5; - ; - ; - ; - ;
+ DPHI(2JET); 54.4 +- 0.5; 79.6 +- 0.8; 66.7 +- 0.7; 42.5 +- 0.4; - ; - ; - ; - ;
+ PT(2GAMMA2JET); 60.3 +- 0.6; 62.3 +- 0.6; 63.3 +- 0.6; 67.4 +- 0.6; - ; - ; - ; - ;
+ DPHI(2GAMMA,2JET); 57.5 +- 0.6; 65.7 +- 0.7; 61.5 +- 0.6; 60.8 +- 0.5; - ; - ; - ; - ;
+ TAUJET; 59.5 +- 1.0; 61.5 +- 0.7; 59.7 +- 0.6; 61.8 +- 0.6; - ; - ; - ; - ;
+ SUM(TAUJET); 63.0 +- 1.0; 61.3 +- 0.7; 59.8 +- 0.6; 60.5 +- 0.5; 67.3 +- 0.6; - ; - ; - ;
+ PT(JET1); 63.6 +- 1.0; 60.7 +- 0.8; 59.8 +- 0.7; 59.6 +- 0.6; 60.5 +- 0.5; - ; - ; - ;
+ HT; 63.6 +- 1.0; 60.9 +- 0.8; 60.1 +- 0.7; 59.3 +- 0.6; 63.8 +- 0.6; - ; - ; - ;
+ YRAP(2GAMMA); 73.9 +- 0.7; 74.0 +- 0.7; 74.2 +- 0.6; 73.9 +- 0.6; 69.9 +- 0.6; 38.8 +- 0.5; - ; - ;
+ PT(2GAMMA); 62.1 +- 1.1; 64.9 +- 1.0; 64.1 +- 0.9; 62.8 +- 0.8; 61.7 +- 0.7; 60.1 +- 0.7; 60.2 +- 0.7; 59.9 +- 0.5;
+*dataend:
+
+*dataset:
+*location: Tab. 8
+*dscomment: Isolation efficiencies in percent for gluon fusion H -> 2gam for each fiducial region/variable bin measured in this analysis. The isolation efficiency is defined as the probability for both photons to fulfil the isolation criteria (ETiso < 14 GeV as described in the text) for events that pass the diphoton kinematic criteria. Uncertainties are assigned in the same way as for the non-perturbative correction factors: by varying the fragmentation and underlying event modelling. These factors can be multiplied by the kinematic acceptance factors (see table~ ef{tab:fid_acceptance}) to extrapolate an inclusive gluon fusion Higgs prediction to the fiducial volume used in this analysis
+*reackey: P P --> HIGGS X
+*obskey: EFFICIENCY
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: BIN INDEX : 1.0 : 2.0 : 3.0 : 4.0 : 5.0 : 6.0 : 7.0 : 8.0 : 9.0 : 10.0
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: PHOTON ISOLATION EFFICIENCY IN PCT
+*xheader: VARIABLE / REGION 
+*data: x : y : y : y : y : y : y : y : y : y : y 
+ DIPHOTON BASELINE; 98.1 +- 0.5; - ; - ; - ; - ; - ; - ; - ; - ; - ;
+ MULT(JET) >= 1; 97.5 +- 0.6; - ; - ; - ; - ; - ; - ; - ; - ; - ;
+ MULT(JET) >= 2; 96.4 +- 1.0; - ; - ; - ; - ; - ; - ; - ; - ; - ;
+ MULT(JET) >= 3; 95.1 +- 1.9; - ; - ; - ; - ; - ; - ; - ; - ; - ;
+ VBF ENHANCED; 97.0 +- 3.0; - ; - ; - ; - ; - ; - ; - ; - ; - ;
+ PT(JET3); 96.7 +- 1.1; 95.3 +- 2.1; 93.8 +- 3.8; - ; - ; - ; - ; - ; - ; - ;
+ MULT(JET,PT>30 GEV); 98.5 +- 0.6; 97.9 +- 0.7; 96.7 +- 1.1; 94.9 +- 1.9; - ; - ; - ; - ; - ; - ;
+ MULT(JET,PT>50 GEV); 98.4 +- 0.6; 97.3 +- 0.7; 95.7 +- 1.7; 94.6 +- 3.7; - ; - ; - ; - ; - ; - ;
+ YRAP(JET1); 97.1 +- 0.7; 97.4 +- 0.8; 97.7 +- 1.2; 97.9 +- 1.8; - ; - ; - ; - ; - ; - ;
+ YRAP(JET2); 95.9 +- 1.5; 96.1 +- 1.6; 96.5 +- 2.1; 97.1 +- 3.2; - ; - ; - ; - ; - ; - ;
+ PT(JET2); 97.9 +- 0.7; 96.7 +- 1.2; 96.0 +- 2.0; 95.1 +- 2.6; - ; - ; - ; - ; - ; - ;
+ M(2JET); 96.5 +- 1.2; 95.8 +- 1.8; 95.7 +- 3.2; 95.6 +- 4.8; - ; - ; - ; - ; - ; - ;
+ DELTAYRAP(2JET); 96.0 +- 1.2; 96.4 +- 1.7; 97.1 +- 3.6; 97.7 +- 7.8; - ; - ; - ; - ; - ; - ;
+ DPHI(2JET); 96.1 +- 1.6; 96.3 +- 1.6; 96.5 +- 2.2; 95.5 +- 2.4; - ; - ; - ; - ; - ; - ;
+ PT(2GAMMA2JET); 97.4 +- 1.5; 96.1 +- 1.8; 94.6 +- 3.0; 92.4 +- 3.8; - ; - ; - ; - ; - ; - ;
+ DPHI(2GAMMA,2JET); 93.9 +- 3.2; 95.9 +- 2.0; 96.7 +- 1.4; 96.9 +- 2.2; - ; - ; - ; - ; - ; - ;
+ TAUJET; 98.1 +- 0.6; 97.9 +- 0.9; 97.3 +- 0.8; 96.9 +- 1.3; - ; - ; - ; - ; - ; - ;
+ SUM(TAUJET); 98.4 +- 0.6; 98.1 +- 1.0; 97.5 +- 0.9; 97.0 +- 1.2; 95.8 +- 1.4; - ; - ; - ; - ; - ;
+ PT(JET1); 98.5 +- 0.6; 98.1 +- 0.8; 97.6 +- 1.0; 97.3 +- 1.2; 96.8 +- 1.4; - ; - ; - ; - ; - ;
+ HT; 98.5 +- 0.6; 98.2 +- 0.9; 97.9 +- 1.1; 97.3 +- 0.9; 96.4 +- 1.4; - ; - ; - ; - ; - ;
+ YRAP(2GAMMA); 98.0 +- 0.7; 98.1 +- 0.7; 98.0 +- 0.7; 98.2 +- 0.7; 98.2 +- 0.7; 98.0 +- 0.9; - ; - ; - ; - ;
+ DELTAYRAP(2GAMMA); 97.8 +- 0.6; 97.8 +- 0.7; 98.0 +- 0.7; 98.2 +- 0.7; 98.5 +- 0.8; 98.9 +- 0.9; 99.2 +- 2.3; - ; - ; - ;
+ PTTHRUST(2GAMMA); 98.2 +- 0.5; 98.2 +- 0.6; 98.4 +- 0.9; 98.3 +- 1.0; 98.3 +- 0.9; 98.0 +- 1.1; 97.4 +- 1.0; - ; - ; - ;
+ PT(2GAMMA); 99.5 +- 0.5; 98.4 +- 0.9; 97.6 +- 1.1; 97.1 +- 1.1; 96.7 +- 1.2; 96.5 +- 1.0; 96.6 +- 1.3; 97.4 +- 1.0; - ; - ;
+ COS(THETA*); 97.8 +- 0.7; 97.8 +- 0.8; 97.9 +- 0.8; 98.0 +- 0.8; 98.2 +- 0.8; 98.4 +- 0.9; 98.7 +- 0.9; 98.9 +- 1.1; 97.9 +- 2.0; 97.9 +- 2.3;
+*dataend:
+
+*dataset:
+*location: Tab. 9
+*dscomment: Non-perturbative correction factors in percent accounting for the impact of hadronisation and the underlying event activity for all measured variables and fiducial regions. Uncertainties are evaluated by deriving these factors using different generators and tunes as described in the text.
+*reackey: P P --> HIGGS X
+*obskey: EFFICIENCY
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: BIN INDEX : 1.0 : 2.0 : 3.0 : 4.0 : 5.0 : 6.0 : 7.0 : 8.0 : 9.0 : 10.0
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: NON-PERTURBATIVE CORRECTION FACTORS IN PCT
+*xheader: VARIABLE / REGION 
+*data: x : y : y : y : y : y : y : y : y : y : y 
+ DIPHOTON BASELINE; 99.9 +- 0.6; - ; - ; - ; - ; - ; - ; - ; - ; - ;
+ MULT(JET) >= 1; 99.2 +- 2.2; - ; - ; - ; - ; - ; - ; - ; - ; - ;
+ MULT(JET) >= 2; 98.0 +- 4.4; - ; - ; - ; - ; - ; - ; - ; - ; - ;
+ MULT(JET) >= 3; 96.2 +- 5.7; - ; - ; - ; - ; - ; - ; - ; - ; - ;
+ VBF ENHANCED; 98.8 +- 5.8; - ; - ; - ; - ; - ; - ; - ; - ; - ;
+ PT(JET3); 98.8 +- 4.0; 96.9 +- 6.8; 95.5 +- 3.2; - ; - ; - ; - ; - ; - ; - ;
+ MULT(JET,PT>30 GEV); 100.9 +- 2.1; 99.7 +- 2.7; 98.8 +- 4.0; 96.3 +- 5.7; - ; - ; - ; - ; - ; - ;
+ MULT(JET,PT>50 GEV); 100.6 +- 1.2; 99.4 +- 2.4; 98.4 +- 4.0; 95.3 +- 3.2; - ; - ; - ; - ; - ; - ;
+ YRAP(JET1); 99.7 +- 2.1; 99.4 +- 2.0; 99.2 +- 2.2; 98.2 +- 3.4; - ; - ; - ; - ; - ; - ;
+ YRAP(JET2); 97.7 +- 3.9; 98.2 +- 4.2; 98.6 +- 5.0; 98.1 +- 6.1; - ; - ; - ; - ; - ; - ;
+ PT(JET2); 99.7 +- 2.7; 98.3 +- 4.9; 98.0 +- 4.5; 97.8 +- 3.5; - ; - ; - ; - ; - ; - ;
+ M(2JET); 97.1 +- 4.1; 99.0 +- 4.4; 99.2 +- 4.9; 99.0 +- 5.7; - ; - ; - ; - ; - ; - ;
+ DELTAYRAP(2JET); 97.5 +- 3.6; 99.0 +- 5.2; 98.7 +- 5.8; 98.8 +- 6.9; - ; - ; - ; - ; - ; - ;
+ DPHI(2JET); 96.6 +- 4.6; 98.6 +- 4.1; 98.1 +- 4.3; 100.2 +- 5.4; - ; - ; - ; - ; - ; - ;
+ PT(2GAMMA2JET); 97.0 +- 6.3; 99.5 +- 3.0; 98.8 +- 4.4; 97.9 +- 5.2; - ; - ; - ; - ; - ; - ;
+ DPHI(2GAMMA,2JET); 101.6 +- 5.4; 98.3 +- 4.2; 98.6 +- 4.7; 95.2 +- 4.0; - ; - ; - ; - ; - ; - ;
+ TAUJET; 100.5 +- 1.7; 99.0 +- 2.6; 100.4 +- 2.3; 100.2 +- 2.0; - ; - ; - ; - ; - ; - ;
+ SUM(TAUJET); 100.5 +- 1.7; 99.4 +- 2.3; 100.6 +- 2.3; 99.5 +- 2.6; 99.1 +- 2.5; - ; - ; - ; - ; - ;
+ PT(JET1); 100.9 +- 2.1; 99.5 +- 2.2; 99.2 +- 2.3; 99.1 +- 2.3; 99.0 +- 2.3; - ; - ; - ; - ; - ;
+ HT; 100.9 +- 2.1; 99.5 +- 2.6; 99.4 +- 3.1; 99.0 +- 2.5; 98.5 +- 3.5; - ; - ; - ; - ; - ;
+ YRAP(2GAMMA); 100.0 +- 0.6; 100.1 +- 0.6; 99.9 +- 0.4; 100.1 +- 0.6; 100.0 +- 0.6; 100.3 +- 0.6; - ; - ; - ; - ;
+ DELTAYRAP(2GAMMA); 100.1 +- 0.6; 100.0 +- 0.7; 100.0 +- 0.6; 100.2 +- 0.8; 100.2 +- 0.6; 100.2 +- 0.5; 100.5 +- 1.5; - ; - ; - ;
+ PTTHRUST(2GAMMA); 99.2 +- 1.3; 101.0 +- 1.1; 100.4 +- 0.7; 100.1 +- 0.7; 100.2 +- 0.7; 100.0 +- 0.7; 99.9 +- 0.7; - ; - ; - ;
+ PT(2GAMMA); 99.5 +- 0.9; 101.0 +- 1.0; 100.4 +- 0.9; 100.2 +- 0.7; 100.2 +- 1.0; 99.8 +- 0.7; 100.0 +- 0.8; 100.0 +- 0.6; - ; - ;
+ COS(THETA*); 100.2 +- 0.7; 100.1 +- 0.6; 100.2 +- 0.7; 99.9 +- 0.7; 100.2 +- 0.6; 100.0 +- 0.5; 100.2 +- 0.7; 100.0 +- 0.6; 100.0 +- 1.0; 100.2 +- 1.1;
+*dataend:
+
+*dataset:
+*location: Tab. 10
+*dscomment: Fiducial cross sections in fb from WH, ZH and ttH combined, in each variable bin and fiducial region
+*reackey: P P --> HIGGS X
+*obskey: SIG
+*qual: ABS(ETARAP(GAMMA1)) : < 2.37
+*qual: ABS(ETARAP(GAMMA2)) : < 2.37
+*qual: BIN INDEX : 1.0 : 2.0 : 3.0 : 4.0 : 5.0 : 6.0 : 7.0 : 8.0 : 9.0 : 10.0
+*qual: PT(GAMMA1)/M(2GAMMA) : > 0.35
+*qual: PT(GAMMA2)/M(2GAMMA) : > 0.25
+*qual: RE : P P --> HIGGS < GAMMA GAMMA > X
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: SIG IN FB
+*xheader: VARIABLE / REGION 
+*data: x : y : y : y : y : y : y : y : y : y : y 
+ DIPHOTON BASELINE; 3.7 +- 0.2; - ; - ; - ; - ; - ; - ; - ; - ; - ;
+ MULT(JET) >= 1; 3.2 +- 0.2; - ; - ; - ; - ; - ; - ; - ; - ; - ;
+ MULT(JET) >= 2; 1.8 +- 0.1; - ; - ; - ; - ; - ; - ; - ; - ; - ;
+ MULT(JET) >= 3; 0.4 +- 0.0; - ; - ; - ; - ; - ; - ; - ; - ; - ;
+ VBF ENHANCED; 0.7 +- 0.0; - ; - ; - ; - ; - ; - ; - ; - ; - ;
+ PT(JET3); 1.4 +- 0.1; 0.3 +- 0.0; 0.2 +- 0.0; - ; - ; - ; - ; - ; - ; - ;
+ MULT(JET,PT>30 GEV); 0.6 +- 0.0; 1.3 +- 0.1; 1.4 +- 0.1; 0.4 +- 0.0; - ; - ; - ; - ; - ; - ;
+ MULT(JET,PT>50 GEV); 1.3 +- 0.1; 1.5 +- 0.1; 0.7 +- 0.0; 0.2 +- 0.0; - ; - ; - ; - ; - ; - ;
+ YRAP(JET1); 1.0 +- 0.1; 1.0 +- 0.1; 0.8 +- 0.0; 0.4 +- 0.0; - ; - ; - ; - ; - ; - ;
+ YRAP(JET2); 0.5 +- 0.0; 0.5 +- 0.0; 0.5 +- 0.0; 0.3 +- 0.0; - ; - ; - ; - ; - ; - ;
+ PT(JET2); 1.3 +- 0.1; 1.0 +- 0.1; 0.5 +- 0.0; 0.4 +- 0.0; - ; - ; - ; - ; - ; - ;
+ M(2JET); 0.7 +- 0.0; 0.4 +- 0.0; 0.3 +- 0.0; 0.2 +- 0.0; - ; - ; - ; - ; - ; - ;
+ DELTAYRAP(2JET); 0.7 +- 0.0; 0.5 +- 0.0; 0.4 +- 0.0; 0.2 +- 0.0; - ; - ; - ; - ; - ; - ;
+ DPHI(2JET); 0.5 +- 0.0; 0.6 +- 0.0; 0.3 +- 0.0; 0.4 +- 0.0; - ; - ; - ; - ; - ; - ;
+ PT(2GAMMA2JET); 1.2 +- 0.1; 0.3 +- 0.0; 0.1 +- 0.0; 0.1 +- 0.0; - ; - ; - ; - ; - ; - ;
+ DPHI(2GAMMA,2JET); 0.3 +- 0.0; 0.3 +- 0.0; 0.8 +- 0.0; 0.5 +- 0.0; - ; - ; - ; - ; - ; - ;
+ TAUJET; 1.2 +- 0.1; 0.7 +- 0.0; 0.9 +- 0.0; 0.6 +- 0.0; - ; - ; - ; - ; - ; - ;
+ SUM(TAUJET); 1.2 +- 0.1; 0.6 +- 0.0; 0.7 +- 0.0; 0.7 +- 0.0; 0.5 +- 0.0; - ; - ; - ; - ; - ;
+ PT(JET1); 0.6 +- 0.0; 0.8 +- 0.0; 0.7 +- 0.0; 0.8 +- 0.0; 0.5 +- 0.0; - ; - ; - ; - ; - ;
+ HT; 0.6 +- 0.0; 0.5 +- 0.0; 0.4 +- 0.0; 1.3 +- 0.1; 0.6 +- 0.0; - ; - ; - ; - ; - ;
+ YRAP(2GAMMA); 0.7 +- 0.0; 0.7 +- 0.0; 0.7 +- 0.0; 0.6 +- 0.0; 0.6 +- 0.0; 0.4 +- 0.0; - ; - ; - ; - ;
+ DELTAYRAP(2GAMMA); 0.8 +- 0.0; 0.8 +- 0.0; 0.7 +- 0.0; 0.6 +- 0.0; 0.4 +- 0.0; 0.4 +- 0.0; 0.1 +- 0.0; - ; - ; - ;
+ PTTHRUST(2GAMMA); 0.4 +- 0.0; 0.4 +- 0.0; 0.4 +- 0.0; 0.3 +- 0.0; 0.6 +- 0.0; 0.6 +- 0.0; 0.9 +- 0.0; - ; - ; - ;
+ PT(2GAMMA); 0.2 +- 0.0; 0.3 +- 0.0; 0.3 +- 0.0; 0.3 +- 0.0; 0.3 +- 0.0; 0.6 +- 0.0; 0.5 +- 0.0; 1.0 +- 0.1; - ; - ;
+ COS(THETA*); 0.5 +- 0.0; 0.5 +- 0.0; 0.5 +- 0.0; 0.5 +- 0.0; 0.4 +- 0.0; 0.4 +- 0.0; 0.3 +- 0.0; 0.3 +- 0.0; 0.2 +- 0.0; 0.2 +- 0.0;
+*dataend:
+
+*E

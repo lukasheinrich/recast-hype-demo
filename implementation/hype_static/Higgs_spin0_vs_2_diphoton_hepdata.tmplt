@@ -1,0 +1,123 @@
+# -*- sh -*-
+#####
+#
+#  Spin Hypothesis Hype configuration file
+#
+####
+
+# 1. Basic settings
+#    Defines names of the dataset and hypotheses to be tested
+#    These names are used as keys to pick up more detailed settings (see below)
+###################
+
+  # Data set name
+DataSetName:        Hyy_cosTS_ATLAS
+
+  # Description of the dataset
+DataSetDescription:       ATLAS \it{H\rightarrow\gamma\gamma}, \sqrt{s} = 8 TeV, 20.3 fb^{-1}
+
+  # Names and configuration of hypotheses
+ZeroHypothesis:		Spin0
+
+  # if sever hyptohteses are given, the code will
+  # run over them in order, producing one set of output for
+  # each of them
+AlternatvieHypotheses:  Spin2
+
+#
+# 2. Definition of output
+####################
+
+  # path to output directory
+OutputDir:    spin0_vs_2_diphoton_output/
+
+  # output file and plot names
+  # the output will appera in files of the form:
+  #   OutputDir/OutputName.root    - root files with TTrees with all information (toys etc)
+  #   OutputDir/OutputName.summary - summary of the test statistics
+  #   OutputDir/OutputName.pdf     - plot 
+  # the words ZEROHYPO and ALTHYPO will be replaced by the 
+  # corresponding hypothesis names 
+OutputName:   ZEROHYPO_vs_ALTHYPO
+
+  # Provide plot type
+  # pre-implmented plot types are:
+  #   OneDimensionalScan : Interprets the list of alternative hypotheses as a 1 dimensional test
+  #   None                : one free parameter (hypotheisis normalization)
+PlotType: OneDimensionalScan
+
+#
+# 3. Specification of the input measurment
+######################
+
+  # path to HepData input file
+Data.HepDataFile:  /home/analysis/analysis/hype_analysis/implementation/hype_static/ATLAS_1306615.HepData
+  # unique identifying key of variable in HepData input (figure/table number from paper)
+Data.HepDataKey:   Fig. 8a
+
+  # name of the variable
+Data.VarName:   cosTS
+
+  # how to display the variable in plots
+Data.VarLabel:  |cos(#theta^{*})|
+
+  # binning of the variable
+Data.Bins:      0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0
+
+
+#
+# 4. Specification of the hypotheses to be used
+######################
+
+
+## provide list of hypotheses
+
+  # Hypothesis type.
+  # can be pre-implemented or user-defined
+  # pre-implmented hypotheses are:
+  #   Fixed_Hypo        : no free parameters
+  #   FloatNorm_Hypo    : one free parameter (hypotheisis normalization)
+  #   FixS_FloatB_Hypo  : 
+  #   FixS_FixB_Hypo    : 
+  # these hypothesis are implemented in include/Hypotheses/
+Spin0.HypothesisType:	FloatNorm_Hypo
+Spin2.HypothesisType:	FloatNorm_Hypo
+
+RandomSeed:       123456789
+
+
+
+# Spin0 hypothesis predictiona and uncertainty covariance
+# Spin0.XSec:         4.28232 4.25835 4.15337 4.00438 3.81403 3.61059 3.18813 2.1953 0.60638 0.387341
+# Spin0.XSecUncert:   0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+
+Spin0.YODAFile: {{SPIN_0_YODA}}
+Spin0.FullyUncorrelatedUncertainties: 1
+
+
+# Spin2 hypothesis predictiona and uncertainty covariance
+# Spin2.XSec:    3.04068 3.12015 3.28188 3.71418 4.08521 4.45763 4.62720 3.14141 0.60691 0.42475 
+# Spin2.XSecUncert:   0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+
+Spin2.YODAFile: {{SPIN_2_YODA}}
+Spin2.FullyUncorrelatedUncertainties: 1
+
+
+
+#
+# 5. Fit settings
+######################
+
+RandomSeed:           123456789
+NpseudoExperiments:   100000
+
+
+
+#
+# 6. Plotting options
+######################
+
+
+
+
+############
