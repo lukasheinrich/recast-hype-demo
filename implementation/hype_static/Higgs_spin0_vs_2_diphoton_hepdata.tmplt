@@ -51,7 +51,7 @@ PlotType: OneDimensionalScan
 ######################
 
   # path to HepData input file
-Data.HepDataFile:  /home/analysis/analysis/hype_analysis/implementation/hype_static/ATLAS_1306615.HepData
+Data.HepDataFile:  hype_static/ATLAS_1306615.HepData
   # unique identifying key of variable in HepData input (figure/table number from paper)
 Data.HepDataKey:   Fig. 8a
 

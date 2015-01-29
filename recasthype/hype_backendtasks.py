@@ -75,8 +75,19 @@ def postresults(jobguid,requestId,parameter_point):
   print results
 
   #also copy to server
-  subprocess.call('''ssh ciserver@lheinric-recast-hype "mkdir -p /home/ciserver/recast/recast-frontend-prototype/results/{}"'''.format(requestId),shell = True)
-  subprocess.call(['scp', '-r', resultdir,'ciserver@lheinric-recast-hype:/home/ciserver/recast/recast-frontend-prototype/results/{}/{}'.format(requestId,parameter_point)])
+  subprocess.call('''ssh {user}@{host} "mkdir -p {base}/results/{requestId}"'''.format(
+    user = BACKENDUSER,
+    host = BACKENDHOST,
+    base = BACKENDBASEPATH,
+    requestId = requestId)
+  ,shell = True)
+  subprocess.call(['scp', '-r', resultdir,'{user}@{host}:{base}/results/{requestId}'.format(
+    user = BACKENDUSER,
+    host = BACKENDHOST,
+    base = BACKENDBASEPATH,
+    requestId = requestId,
+    point = parameter_point
+  )])
   
   io.Of('/monitor').Emit('postresults_done_{}'.format(jobguid),{'requestId':requestId})
 
