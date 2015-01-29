@@ -11,6 +11,7 @@ setup(
   install_requires = [
     'Flask',
     'celery',
+    'requests',
     'recast-api',
     'yoda',
     'socket.io-python-emitter',
@@ -18,5 +19,6 @@ setup(
   ],
   dependency_links = [
     'https://github.com/ziyasal/socket.io-python-emitter/tarball/master#egg=socket.io-python-emitter-0.1.3',
+    'https://github.com/cranmer/recast-api/tarball/master#egg=recast-api-0.0.1'
   ]
 )

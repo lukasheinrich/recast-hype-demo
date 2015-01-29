@@ -8,11 +8,26 @@ import redis
 import emitter
 import zipfile
 
-CELERY_RESULT_BACKEND = 'redis://lheinric-recast-hype:6379/0'
-app = Celery('tasks', backend='redis://lheinric-recast-hype', broker='redis://lheinric-recast-hype')
 
-red = redis.StrictRedis(host = 'lheinric-recast-hype', db = 0)
+# BACKENDUSER = 'lukas'
+# BACKENDHOST = 'localhost'
+# BACKENDBASEPATH = '/Users/lukas/Code/atlas/recast/recast-frontend-prototype'
+BACKENDUSER = 'analysis'
+BACKENDHOST = 'recast-demo'
+BACKENDBASEPATH = '/home/analysis/recast/recast-frontend-prototype'
+
+CELERY_RESULT_BACKEND = 'redis://{}:6379/0'.format(BACKENDHOST)
+
+app = Celery('tasks', backend='redis://{}'.format(BACKENDHOST), broker='redis://{}'.format(BACKENDHOST))
+
+red = redis.StrictRedis(host = BACKENDHOST, db = 0)
 io  = emitter.Emitter({'client': red})
+
+
+from datetime import datetime
+
+def socketlog(jobguid,msg):
+  io.Of('/monitor').In(jobguid).Emit('room_msg',{'date':datetime.now().strftime('%Y-%m-%d %X'),'msg':msg})
 
 import requests
 def download_file(url,download_dir):
@@ -70,12 +85,12 @@ def hype(jobguid):
   workdir = 'workdirs/{}'.format(jobguid)
 
 
-  spin0 = os.path.abspath('../implementation/hype_static/fake_spin0.yoda'.format(workdir))
+  spin0 = os.path.abspath('hype_static/fake_spin0.yoda'.format(workdir))
   spin2 = os.path.abspath('{}/inputs/fake_spin2.yoda'.format(workdir))
   
   env = jinja2.Environment(undefined=jinja2.StrictUndefined)
 
-  hypetmplt = '../implementation/hype_static/Higgs_spin0_vs_2_diphoton_hepdata.tmplt'
+  hypetmplt = 'hype_static/Higgs_spin0_vs_2_diphoton_hepdata.tmplt'
  
 
   print "trying to render template"
@@ -93,7 +108,7 @@ def hype(jobguid):
   logfile = '{}/hype.logfile'.format(workdir)
   print "trying to run hype and print to logfile {}".format(logfile)
   with open(logfile,'w') as log:
-    subprocess.call(['../implementation/hype/bin/hype',os.path.abspath(filledtemplate)], stdout = log)
+    subprocess.call(['hype/bin/hype',os.path.abspath(filledtemplate)], stdout = log)
 
   io.Of('/monitor').Emit('hype_done_{}'.format(jobguid))
 
