@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, jsonify, request
 blueprint = Blueprint('hype_analysis', __name__, template_folder='hype_templates')
 
-RECAST_ANALYSIS_ID = 'ce317406-8e8d-8a54-d9a5-899b6d50f176'
+RECAST_ANALYSIS_ID = '3ad4efdb-0170-fb94-75a5-8a1279386745'
 
 import json
 import requests
