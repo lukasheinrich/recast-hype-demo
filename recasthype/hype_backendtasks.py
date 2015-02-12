@@ -14,7 +14,7 @@ import zipfile
 # BACKENDBASEPATH = '/Users/lukas/Code/atlas/recast/recast-frontend-prototype'
 BACKENDUSER = 'analysis'
 BACKENDHOST = 'recast-demo'
-BACKENDBASEPATH = '/home/analysis/recast/recast-frontend-prototype'
+BACKENDBASEPATH = '/home/analysis/recast/recaststorage'
 
 CELERY_RESULT_BACKEND = 'redis://{}:6379/0'.format(BACKENDHOST)
 
@@ -44,7 +44,7 @@ def download_file(url,download_dir):
 
 @task
 def results(requestId,parameter_point):
-  resultdir = 'results/{}/{}'.format(requestId,parameter_point)
+  resultdir = '{}/results/{}/{}'.format(BACKENDBASEPATH,requestId,parameter_point)
   a = open('{}/hype.logfile'.format(resultdir)).readlines()
   limits = [l for l in a if 'limit' in l]
   results = [float(l.strip().split('=')[-1]) for l in limits]
@@ -75,13 +75,15 @@ def postresults(jobguid,requestId,parameter_point):
   print results
 
   #also copy to server
-  subprocess.call('''ssh {user}@{host} "mkdir -p {base}/results/{requestId}"'''.format(
+  subprocess.call('''ssh {user}@{host} "mkdir -p {base}/results/{requestId}/{point} && rm -rf {base}/results/{requestId}/{point}/dedicated"'''.format(
     user = BACKENDUSER,
     host = BACKENDHOST,
     base = BACKENDBASEPATH,
-    requestId = requestId)
+    requestId = requestId,
+    point = parameter_point)
+
   ,shell = True)
-  subprocess.call(['scp', '-r', resultdir,'{user}@{host}:{base}/results/{requestId}'.format(
+  subprocess.call(['scp', '-r', resultdir,'{user}@{host}:{base}/results/{requestId}/{point}/dedicated'.format(
     user = BACKENDUSER,
     host = BACKENDHOST,
     base = BACKENDBASEPATH,
