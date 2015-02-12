@@ -44,7 +44,7 @@ def download_file(url,download_dir):
 
 @task
 def results(requestId,parameter_point):
-  resultdir = '{}/results/{}/{}'.format(BACKENDBASEPATH,requestId,parameter_point)
+  resultdir = '{}/results/{}/{}/dedicated'.format(BACKENDBASEPATH,requestId,parameter_point)
   a = open('{}/hype.logfile'.format(resultdir)).readlines()
   limits = [l for l in a if 'limit' in l]
   results = [float(l.strip().split('=')[-1]) for l in limits]
