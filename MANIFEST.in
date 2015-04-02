@@ -1,1 +1,1 @@
-recursive-include recasthype/hype_templates *
+recursive-include recasthype/templates *
