@@ -4,17 +4,25 @@ import shutil
 import glob
 import subprocess
 import yaml
+import os
+
+from recastbackend.logging import socketlog
 
 @shared_task
 def extract_results(jobguid):
   workdir = 'workdirs/{}'.format(jobguid)
   a = open('{}/hype.logfile'.format(workdir)).readlines()
   limits = [l for l in a if 'limit' in l]
-  results = [float(l.strip().split('=')[-1]) for l in limits]
 
+  labels = ['observed','expected-spin0','expected-spin2']
+  values = [float(l.strip().split('=')[-1]) for l in limits]
+
+  results = dict(zip(labels,values))
+    
   with open('{}/results.yaml'.format(workdir),'w') as f:
     f.write(yaml.dump(results,default_flow_style=False))
-
+    socketlog(jobguid,'got results: {}'.format(results))
+    
   return jobguid
 
 @shared_task
@@ -47,26 +55,12 @@ def hype(jobguid):
   with open(logfile,'w') as log:
     subprocess.call(['hype/bin/hype',os.path.abspath(filledtemplate)], stdout = log)
 
-  io.Of('/monitor').Emit('hype_done_{}'.format(jobguid))
+  socketlog(jobguid,'hype done')
 
   return jobguid
 
-@shared_task
-def prepare_job(jobguid,jobinfo):
-  print "job info is {}".format(jobinfo)
-  print "job uuid is {}".format(jobguid)
-  workdir = 'workdirs/{}'.format(jobguid)
-
-  input_url = jobinfo['run-condition'][0]['lhe-file']
-  print "downloading file : {}".format(input_url) 
-  filepath = download_file(input_url,workdir)
-  
-  print "downloaded file to: {}".format(filepath)
-
-  with zipfile.ZipFile(filepath)as f:  
-    f.extractall('{}/inputs'.format(workdir))
-
-  return jobguid
+def resultlist():
+    return ['hype.logfile','results.yaml']
 
 def get_chain(queuename):
   chain = (
