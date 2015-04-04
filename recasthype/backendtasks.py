@@ -52,7 +52,7 @@ def hype(jobguid):
   logfile = '{}/hype.logfile'.format(workdir)
   print "trying to run hype and print to logfile {}".format(logfile)
   with open(logfile,'w') as logfile:
-    subprocess.call(['hype/bin/hype',os.path.abspath(filledtemplate)], stdout = log)
+    subprocess.call(['hype/bin/hype',os.path.abspath(filledtemplate)], stdout = logfile)
 
   log.info('hype done')
 
