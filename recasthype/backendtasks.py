@@ -1,4 +1,3 @@
-from celery import shared_task
 import jinja2
 import shutil
 import glob
@@ -6,9 +5,10 @@ import subprocess
 import yaml
 import os
 
-from recastbackend.logging import socketlog
+import logging
+log = logging.getLogger('RECAST')
 
-@shared_task
+
 def extract_results(jobguid):
   workdir = 'workdirs/{}'.format(jobguid)
   a = open('{}/hype.logfile'.format(workdir)).readlines()
@@ -21,11 +21,10 @@ def extract_results(jobguid):
     
   with open('{}/results.yaml'.format(workdir),'w') as f:
     f.write(yaml.dump(results,default_flow_style=False))
-    socketlog(jobguid,'got results: {}'.format(results))
+    log.info('got results: {}'.format(results))
     
   return jobguid
 
-@shared_task
 def hype(jobguid):
   workdir = 'workdirs/{}'.format(jobguid)
 
@@ -52,19 +51,17 @@ def hype(jobguid):
 
   logfile = '{}/hype.logfile'.format(workdir)
   print "trying to run hype and print to logfile {}".format(logfile)
-  with open(logfile,'w') as log:
+  with open(logfile,'w') as logfile:
     subprocess.call(['hype/bin/hype',os.path.abspath(filledtemplate)], stdout = log)
 
-  socketlog(jobguid,'hype done')
+  log.info('hype done')
 
   return jobguid
 
 def resultlist():
     return ['hype.logfile','results.yaml']
 
-def get_chain(queuename):
-  chain = (
-            hype.subtask(queue=queuename) |
-            extract_results.subtask(queue=queuename)
-          )
-  return chain  
+def recast(ctx):
+  jobguid = ctx['jobguid']
+  hype(jobguid)
+  extract_results(jobguid)
